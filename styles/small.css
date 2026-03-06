@@ -16,7 +16,7 @@ body {
     font-family: 'Segoe UI', Roboto, Arial, sans-serif; 
     line-height: 1.6; 
     background-color: var(--bg-color); 
-    color: var(--text-color); 
+    color: var(--white); 
     padding: var(--container-padding); 
     -webkit-font-smoothing: antialiased; 
 }
@@ -85,7 +85,7 @@ header { display: flex;
 }
 
 .navbar a { 
-    color: white; 
+    color: rgb(9, 9, 9); 
     text-decoration: none; 
     padding: 0.5rem; 
 }

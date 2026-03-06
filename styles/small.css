@@ -1,6 +1,6 @@
 :root {
   /* Darkened from #007bff to #005eb8 to pass 4.5:1 ratio with white text */
-  --primary-color: #005eb8; 
+  --primary-color: #8a00b8; 
   --white: #ffffff;
   /* Added a specific variable for navbar text to ensure visibility */
   --nav-text-color: #ffffff; 
@@ -67,7 +67,7 @@ header { display: flex;
 
 .navbar { 
     display: none; 
-    background-color: #17538a;  
+    background-color: #860797;  
     margin-top: 0.5rem; 
 }
 
@@ -85,7 +85,7 @@ header { display: flex;
 }
 
 .navbar a { 
-    color: rgb(9, 9, 9); 
+    color: rgb(250, 246, 246); 
     text-decoration: none; 
     padding: 0.5rem; 
 }
@@ -109,7 +109,7 @@ h1, h2 {
 footer { 
     text-align: center; 
     margin-top: 2rem; 
-    background-color: #0056b3; 
+    background-color: #330145; 
     color: white; 
     padding: 1rem 0;  
 }

@@ -1,0 +1,136 @@
+/* 1. Modern Reset & Custom Properties */
+:root {
+    --primary-color: #007BFF;
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --white: #ffffff;
+    --transition-speed: 0.3s;
+    --container-padding: clamp(1rem, 5vw, 2rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif; 
+    line-height: 1.6; 
+    background-color: var(--bg-color); 
+    color: var(--text-color); 
+    padding: var(--container-padding); 
+    -webkit-font-smoothing: antialiased; 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+.name { 
+    font-size: clamp(1.2rem, 2vw, 1.8rem); 
+    font-weight: 600;
+}
+
+ .hamburger-icon { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around; 
+    width: 30px; 
+    height: 24px; 
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
+    z-index: 10; 
+}
+
+.hamburger-icon span { 
+    width: 100%; height: 3px; 
+    background-color: var(--white); 
+    border-radius: 10px; 
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+.menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navbar { 
+    display: none; 
+    background-color: #0056b3;  
+    margin-top: 0.5rem; 
+}
+
+.navbar.active { 
+    display: block;
+}
+
+.navbar ul { 
+    list-style: none; 
+    padding: 1rem; 
+}
+
+.navbar li { 
+    margin: 0.5rem 0;
+}
+
+.navbar a { 
+    color: white; 
+    text-decoration: none; 
+    padding: 0.5rem; 
+}
+
+main {
+    margin-top: 2rem;
+}
+
+section { 
+    background: white; 
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+h1, h2 { 
+    margin-bottom: 
+    1rem; 
+}
+
+footer { 
+    text-align: center; 
+    margin-top: 2rem; 
+    background-color: #0056b3; 
+    color: white; 
+    padding: 1rem 0;  
+}
+
+.social-links { 
+    margin-bottom: 1rem; 
+}
+
+.social-links a { 
+    margin: 0 1rem; 
+    color: white; 
+    text-decoration: none; 
+}
+
+@media (max-width: 768px) { 
+    .navbar ul { padding: 0; } 
+}
+
+#currentYear { font-weight: bold; /* Bold year in footer */ 
+}
+

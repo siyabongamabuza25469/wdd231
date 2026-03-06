@@ -1,0 +1,33 @@
+/* Media Queries for larger screens */
+@media (min-width: 769px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .navbar { 
+        display: flex; 
+    }
+
+    .navbar ul {
+    display: flex; /* Use flex for horizontal layout */
+}
+
+.navbar li { 
+    margin: 0 2rem; 
+}
+
+main {
+    max-width: 1200px; 
+    margin: auto; /* Center main content */
+}
+
+section { 
+    padding: 2rem; 
+}
+
+.logo img {
+    max-width: 200px; /* Larger logo for bigger screens */
+}
+
+.name { font-size: 2rem;  
+} }

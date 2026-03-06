@@ -6,14 +6,18 @@
     <meta name="description" content="This is the personal website of Siyabonga Bafanabakhe Mabuza showcasing projects and experiences.">
     <meta name="author" content="Siyabonga Bafanabakhe Mabuza">
     <title>Home - Siyabonga Bafanabakhe Mabuza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/base.js" defer></script>
+    <script src="scripts/small.js" defer></script>
+    <script src="scripts/larger.js" defer></script>
 </head>
 <body>
     <header>
     <div class="logo">
-        <img src="logo.jpg" alt="Site Logo"> 
+        <img src="logo.svg" alt="Site Logo"> 
     </div>
     <span class="name">Siyabonga Bafanabakhe Mabuza</span>
     <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div> 
@@ -48,7 +52,16 @@
         <a href="https://https://github.com/siyabongamabuza25469/wdd231" target="_blank" rel="noopener">GitHub</a>  
         <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" rel="noopener">LinkedIn</a>  
         <a href="https://twitter.com/yourusername" target="_blank" rel="noopener">Twitter</a>
-        <p>&copy; <span id="currentYear">2025</span> Siyabonga Bafanabakhe Mabuza. Gauteng, South Africa <span id="lastModified"></span></p> 
+        
+        <div class="footer-content">
+        <p>&copy; <span id="currentyear"></span> Siyabonga Bafanabakhe Mabuza. Gauteng, South Africa <span id="lastmodified"></span></p>
+    </div>
+    <nav class="navbar" id="footerNav">
+        <!-- Navigation links would go here -->
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+        Menu
+    </button>
     </div>
     </footer>
     </body>

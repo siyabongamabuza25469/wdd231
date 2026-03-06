@@ -16,7 +16,7 @@ body {
     font-family: 'Segoe UI', Roboto, Arial, sans-serif; 
     line-height: 1.6; 
     background-color: var(--bg-color); 
-    color: var(--white); 
+    color: var(--bg-color); 
     padding: var(--container-padding); 
     -webkit-font-smoothing: antialiased; 
 }

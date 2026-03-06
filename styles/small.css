@@ -1,11 +1,9 @@
-/* 1. Modern Reset & Custom Properties */
 :root {
-    --primary-color: #007BFF;
-    --bg-color: #f4f4f4;
-    --text-color: #333;
-    --white: #ffffff;
-    --transition-speed: 0.3s;
-    --container-padding: clamp(1rem, 5vw, 2rem);
+  /* Darkened from #007bff to #005eb8 to pass 4.5:1 ratio with white text */
+  --primary-color: #005eb8; 
+  --white: #ffffff;
+  /* Added a specific variable for navbar text to ensure visibility */
+  --nav-text-color: #ffffff; 
 }
 
 * {
@@ -23,14 +21,13 @@ body {
     -webkit-font-smoothing: antialiased; 
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: var(--primary-color);
-  color: var(--white);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+header { display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 1rem 2rem; 
+    background-color: var(--primary-color); 
+    color: var(--white); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .logo img {

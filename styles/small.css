@@ -67,7 +67,7 @@ header { display: flex;
 
 .navbar { 
     display: none; 
-    background-color: #219707;  
+    background-color: #975407;  
     margin-top: 0.5rem; 
 }
 
@@ -85,7 +85,7 @@ header { display: flex;
 }
 
 .navbar a { 
-    color: rgb(250, 246, 246); 
+    color: rgb(14, 12, 12); 
     text-decoration: none; 
     padding: 0.5rem; 
 }

@@ -1,6 +1,6 @@
 :root {
-    --navbar-background-color: #90e337; 
-    --white: #837b7b;                  
+    --navbar-background-color: #ccf1a4; 
+    --white: #050101;                  
     --container-padding: 20px;         
 }
 
@@ -91,10 +91,10 @@ main {
 }
 
 section { 
-    background: white; 
+    background: rgb(153, 203, 132); 
     padding: 1rem; 
     margin-bottom: 1rem; 
-    box-shadow: 0 2px 5px rgba(199, 194, 194, 0.1); 
+    box-shadow: 0 2px 5px rgba(202, 155, 226, 0.1); 
 }
 
 h1, h2 { 

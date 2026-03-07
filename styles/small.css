@@ -65,10 +65,9 @@ header { display: flex;
     cursor: pointer;
 }
 
-.navbar { 
-    display: none; 
-    background-color: #dbea3b;  
-    margin-top: 0.5rem; 
+nav.navbar {
+    background-color: rgb(51, 1, 69); /* Dark purple background */
+    color: rgb(255, 255, 255); /* White text */
 }
 
 .navbar.active { 
@@ -85,7 +84,7 @@ header { display: flex;
 }
 
 .navbar a { 
-    color: rgb(14, 12, 12); 
+    color: rgb(236, 227, 227); 
     text-decoration: none; 
     padding: 0.5rem; 
 }

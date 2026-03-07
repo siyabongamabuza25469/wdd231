@@ -27,7 +27,7 @@ header { display: flex;
     padding: 1rem 2rem; 
     background-color: var(--primary-color); 
     color: var(--white); 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 5px rgba(233, 226, 226, 0.1); 
 }
 
 .logo img {
@@ -67,7 +67,7 @@ header { display: flex;
 
 .navbar { 
     display: none; 
-    background-color: #975407;  
+    background-color: #dbea3b;  
     margin-top: 0.5rem; 
 }
 

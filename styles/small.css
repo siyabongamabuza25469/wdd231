@@ -64,7 +64,7 @@ header { display: flex;
 }
 
 nav.navbar { 
-    background-color: var(--navbar-background-color) !important; /* Use the updated dark green */ 
+    background-color: var(--white) !important; /* Use the updated dark green */ 
 }
 
 .navbar.active { 
@@ -81,7 +81,7 @@ nav.navbar {
 }
 
 .navbar a { 
-    color: var(--white); /* Use the updated nav text color */ 
+    color: var(--navbar-background-color); /* Use the updated nav text color */ 
     text-decoration: none; 
     padding: 0.5rem; 
 }

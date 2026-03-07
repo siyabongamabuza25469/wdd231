@@ -1,7 +1,7 @@
 :root {
-    --navbar-background-color: #000000; /* Define the variable */
-    --white: #ffffff;                  /* Define the variable */
-    --container-padding: 20px;         /* Define the variable */
+    --navbar-background-color: #90e337; 
+    --white: #837b7b;                  
+    --container-padding: 20px;         
 }
 
 * {
@@ -13,8 +13,8 @@
 body { 
     font-family: 'Segoe UI', Roboto, Arial, sans-serif; 
     line-height: 1.6; 
-    color: var(--navbar-background-color); 
-    background-color: var(--white); 
+    color: var(--white); 
+    background-color: var(--navbar-background-color); 
     padding: var(--container-padding); 
     -webkit-font-smoothing: antialiased; 
 }
@@ -23,8 +23,8 @@ header { display: flex;
     align-items: center; 
     justify-content: space-between; 
     padding: 1rem 2rem; 
-    background-color: var(--white); 
-    color:var(--primary-color);
+    background-color: var(--primary-color); 
+    color:var(--white);
     box-shadow: 0 2px 5px rgba(61, 196, 81, 0.1); 
 }
 

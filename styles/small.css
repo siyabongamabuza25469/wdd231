@@ -107,7 +107,7 @@ h1, h2 {
 footer { 
     text-align: center; 
     margin-top: 2rem; 
-    background-color: #858187; 
+    background-color: #723c8e; 
     color: white; 
     padding: 1rem 0;  
 }
@@ -118,7 +118,7 @@ footer {
 
 .social-links a { 
     margin: 0 1rem; 
-    color: rgb(9, 9, 9); 
+    color: rgb(241, 239, 239); 
     text-decoration: none; 
 }
 
@@ -128,6 +128,5 @@ footer {
 
 #currentYear { 
     font-weight: bold; /* Bold year in footer */ 
-    color: black;
 }
 

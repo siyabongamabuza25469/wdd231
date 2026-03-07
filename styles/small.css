@@ -16,7 +16,7 @@ body {
     font-family: 'Segoe UI', Roboto, Arial, sans-serif; 
     line-height: 1.6; 
     background-color: var(--white); 
-    color: var(--transition-speed); 
+    color: var(--primary-color); 
     padding: var(--container-padding); 
     -webkit-font-smoothing: antialiased; 
 }
@@ -84,7 +84,7 @@ nav.navbar {
 }
 
 .navbar a { 
-    color: rgb(236, 227, 227); 
+    color: rgb(223, 173, 211); 
     text-decoration: none; 
     padding: 0.5rem; 
 }
@@ -97,7 +97,7 @@ section {
     background: white; 
     padding: 1rem; 
     margin-bottom: 1rem; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 5px rgba(247, 244, 244, 0.1); 
 }
 
 h1, h2 { 

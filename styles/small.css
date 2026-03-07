@@ -66,7 +66,7 @@ header { display: flex;
 }
 
 nav.navbar {
-    background-color: rgb(217, 211, 211); /* Dark purple background */
+    background-color: rgb(34, 171, 68); /* Dark purple background */
     color: rgb(1, 8, 11); /* White text */
 }
 

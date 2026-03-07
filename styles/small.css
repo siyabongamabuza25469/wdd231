@@ -1,9 +1,7 @@
-root {
-  /* Updated primary color for better contrast */
-  --primary-color: #005eb8; 
-  --white: #ffffff;
-  --nav-text-color: #f0f0f0; /* Changed to a lighter gray for better contrast */
-  --navbar-background-color: #004d40; /* A darker green for better contrast */
+:root {
+    --navbar-background-color: #000000; /* Define the variable */
+    --white: #ffffff;                  /* Define the variable */
+    --container-padding: 20px;         /* Define the variable */
 }
 
 * {
@@ -15,8 +13,8 @@ root {
 body { 
     font-family: 'Segoe UI', Roboto, Arial, sans-serif; 
     line-height: 1.6; 
-    color: var(--navbar-background-color); /* Black text */
-    background-color:var(--white);
+    color: var(--navbar-background-color); 
+    background-color: var(--white); 
     padding: var(--container-padding); 
     -webkit-font-smoothing: antialiased; 
 }
@@ -83,7 +81,7 @@ nav.navbar {
 }
 
 .navbar a { 
-    color: var(--nav-text-color); /* Use the updated nav text color */ 
+    color: var(--white); /* Use the updated nav text color */ 
     text-decoration: none; 
     padding: 0.5rem; 
 }

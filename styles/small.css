@@ -1,9 +1,9 @@
-:root {
-  /* Darkened from #007bff to #005eb8 to pass 4.5:1 ratio with white text */
-  --primary-color: #8a00b8; 
+root {
+  /* Updated primary color for better contrast */
+  --primary-color: #005eb8; 
   --white: #ffffff;
-  /* Added a specific variable for navbar text to ensure visibility */
-  --nav-text-color: #d0cccc; 
+  --nav-text-color: #f0f0f0; /* Changed to a lighter gray for better contrast */
+  --navbar-background-color: #004d40; /* A darker green for better contrast */
 }
 
 * {
@@ -65,9 +65,8 @@ header { display: flex;
     cursor: pointer;
 }
 
-nav.navbar {
-    background-color: rgb(34, 171, 68); /* Dark purple background */
-    color: rgb(1, 8, 11); /* White text */
+nav.navbar { 
+    background-color: var(--navbar-background-color) !important; /* Use the updated dark green */ 
 }
 
 .navbar.active { 
@@ -84,7 +83,7 @@ nav.navbar {
 }
 
 .navbar a { 
-    color: rgb(9, 9, 9); 
+    color: var(--nav-text-color); /* Use the updated nav text color */ 
     text-decoration: none; 
     padding: 0.5rem; 
 }
@@ -108,7 +107,7 @@ h1, h2 {
 footer { 
     text-align: center; 
     margin-top: 2rem; 
-    background-color: #330145; 
+    background-color: #858187; 
     color: white; 
     padding: 1rem 0;  
 }
@@ -119,7 +118,7 @@ footer {
 
 .social-links a { 
     margin: 0 1rem; 
-    color: white; 
+    color: rgb(9, 9, 9); 
     text-decoration: none; 
 }
 
@@ -127,6 +126,8 @@ footer {
     .navbar ul { padding: 0; } 
 }
 
-#currentYear { font-weight: bold; /* Bold year in footer */ 
+#currentYear { 
+    font-weight: bold; /* Bold year in footer */ 
+    color: black;
 }
 

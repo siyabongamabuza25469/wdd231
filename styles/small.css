@@ -1,8 +1,7 @@
 :root {
-    --navbar-background-color: #d2ecb6; 
-    --white: #582121;                  
-    --container-padding: 20px;         
-}
+        --primary-font: 'Roboto', sans-serif;
+        background-color: violet
+    }        
 
 * {
     margin: 0;
@@ -11,7 +10,6 @@
 }
 
 body { 
-    font-family: 'Segoe UI', Roboto, Arial, sans-serif; 
     line-height: 1.6; 
     color: var(--white); 
     background-color: var(--navbar-background-color); 
@@ -64,24 +62,27 @@ header { display: flex;
 }
 
 nav.navbar { 
-    background-color: var(--white) !important; /* Use the updated dark green */ 
+    background-color: var(--white) !important;
 }
 
 .navbar.active { 
     display: block;
 }
 
-.navbar ul { 
-    list-style: none; 
-    padding: 1rem; 
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
 }
 
-.navbar li { 
-    margin: 0.5rem 0;
+.navbar li {
+    margin-bottom: 10px; /* Adds spacing between the vertical items */
 }
 
 .navbar a { 
-    color: var(--navbar-background-color); /* Use the updated nav text color */ 
+    color: var(--navbar-background-color); 
     text-decoration: none; 
     padding: 0.5rem; 
 }
@@ -91,14 +92,48 @@ main {
 }
 
 section { 
-    background: rgb(153, 203, 132); 
+    background: rgb(198, 132, 203); 
     padding: 1rem; 
     margin-bottom: 1rem; 
     box-shadow: 0 2px 5px rgba(202, 155, 226, 0.1); 
 }
 
+.my-courses {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .course-links {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        .course-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .course-box:hover {
+            background-color: #003d80;
+        }
+
 h1, h2 { 
-    margin-bottom: 
+    margin-top: 
     1rem; 
 }
 
@@ -106,7 +141,8 @@ footer {
     text-align: center; 
     margin-top: 2rem; 
     background-color: #723c8e; 
-    color: white; 
+    color: white;
+    list-style-type: none; 
     padding: 1rem 0;  
 }
 
@@ -125,6 +161,6 @@ footer {
 }
 
 #currentYear { 
-    font-weight: bold; /* Bold year in footer */ 
+    font-weight: bold; 
 }
 

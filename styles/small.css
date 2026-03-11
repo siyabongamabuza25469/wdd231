@@ -1,7 +1,9 @@
 :root {
-        --primary-font: 'Roboto', sans-serif;
-        background-color: violet
-    }        
+    --white: #ffffff;
+    --navbar-background-color: #333333;
+    --container-padding: 20px;
+    --main-font: 'Roboto', sans-serif;
+}       
 
 * {
     margin: 0;
@@ -10,14 +12,17 @@
 }
 
 body { 
+    font-family: var(--main-font); 
     line-height: 1.6; 
     color: var(--white); 
     background-color: var(--navbar-background-color); 
-    padding: var(--container-padding); 
+    padding: var(--container-padding); /* Vendor extension for font smoothing */ 
     -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
 }
 
-header { display: flex; 
+header { 
+    display: flex; 
     align-items: center; 
     justify-content: space-between; 
     padding: 1rem 2rem; 
@@ -69,6 +74,12 @@ nav.navbar {
     display: block;
 }
 
+#nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
 .navbar ul {
     display: flex;
     flex-direction: column;
@@ -92,7 +103,7 @@ main {
 }
 
 section { 
-    background: rgb(198, 132, 203); 
+    background: rgb(60, 52, 61); 
     padding: 1rem; 
     margin-bottom: 1rem; 
     box-shadow: 0 2px 5px rgba(202, 155, 226, 0.1); 
@@ -129,7 +140,7 @@ section {
             text-align: center;
         }
         .course-box:hover {
-            background-color: #003d80;
+            background-color: #3c15a8;
         }
 
 h1, h2 { 
@@ -140,7 +151,7 @@ h1, h2 {
 footer { 
     text-align: center; 
     margin-top: 2rem; 
-    background-color: #723c8e; 
+    background-color: #0e0a10; 
     color: white;
     list-style-type: none; 
     padding: 1rem 0;  

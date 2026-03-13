@@ -1,0 +1,76 @@
+[
+    {
+        "companyName": "Tech Innovators",
+        "companyAddress": "123 Innovation Drive, Tech City, CA",
+        "companyPhoneNumber": "+1234567890",
+        "companyWebsite": "http://www.techinnovators.com",
+        "imageFileName": "tech_innovators.jpg",
+        "membershipLevel": 3,
+        "otherInfo": "Leading in tech solutions."
+    },
+    {
+        "companyName": "Green Energy Corp",
+        "companyAddress": "456 Eco Way, Nature Town, TX",
+        "companyPhoneNumber": "+1987654321",
+        "companyWebsite": "http://www.greenenergycorp.com",
+        "imageFileName": "green_energy_corp.jpg",
+        "membershipLevel": 2,
+        "otherInfo": "Sustainable energy solutions."
+    },
+     {
+        "companyName": "HealthPlus Medical",
+        "companyAddress": "789 Wellness Blvd, Healthy City, FL",
+        "companyPhoneNumber": "+1122334455",
+        "companyWebsite": "http://www.healthplus.com",
+        "imageFileName": "healthplus_medical.jpg",
+        "membershipLevel": 1,
+        "otherInfo": "Your health is our priority."
+    },
+    {
+        "companyName": "EduTech Services",
+        "companyAddress": "159 Learning Lane, Education City, NY",
+        "companyPhoneNumber": "+2233445566",
+        "companyWebsite": "http://www.edutechservices.com",
+        "imageFileName": "edutech_services.jpg",
+        "membershipLevel": 3,
+        "otherInfo": "Innovative education technology."
+    },
+    {
+        "companyName": "Smart Finance Group",
+        "companyAddress": "753 Money St, Finance District, IL",
+        "companyPhoneNumber": "+3344556677",
+        "companyWebsite": "http://www.smartfinancegroup.com",
+        "imageFileName": "smart_finance_group.jpg",
+        "membershipLevel": 2,
+        "otherInfo": "Expert financial advice."
+    },
+    {
+        "companyName": "Smart Finance Group",
+        "companyAddress": "789 Wealth St, Finance City, NY",
+        "companyPhoneNumber": "+3344556677",
+        "companyWebsite": "http://www.smartfinancegroup.com",
+        "imageFileName": "smart_finance_group.jpg",
+        "membershipLevel": 2,
+        "otherInfo": "Financial planning services."
+    },
+    {
+        "companyName": "Travel World Agency",
+        "companyAddress": "321 Adventure Ave, Traveler's Town, WA",
+        "companyPhoneNumber": "+4455667788",
+        "companyWebsite": "http://www.travelworld.com",
+        "imageFileName": "travel_world_agency.jpg",
+        "membershipLevel": 1,
+        "otherInfo": "Explore the world with us."
+    },
+    {
+        "companyName": "Foodie Haven",
+        "companyAddress": "852 Culinary Rd, Food City, OR",
+        "companyPhoneNumber": "+5566778899",
+        "companyWebsite": "http://www.foodiehaven.com",
+        "imageFileName": "foodie_haven.jpg",
+        "membershipLevel": 3,
+        "otherInfo": "Delicious food experiences."
+    }
+]
+
+

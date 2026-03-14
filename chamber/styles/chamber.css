@@ -14,11 +14,6 @@
     display: block; 
 } 
 
-.list-item { 
-    border-bottom: 1px solid #ccc; 
-    padding: 10px; 
-}
-
 .navbar ul {
     display: flex;
     flex-direction: column;

@@ -56,8 +56,6 @@
     text-decoration: underline; 
 }
 
-/* Integration with chamber.css classes / .grid-item { / Inherits from .card if applied to the same element */ 
-
 .list-item { 
     display: flex; 
     align-items: center;

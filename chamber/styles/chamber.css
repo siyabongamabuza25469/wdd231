@@ -1,0 +1,20 @@
+.grid { 
+    display: flex; 
+    flex-wrap: wrap; 
+} 
+
+.grid-item { 
+    width: 30%; 
+    margin: 1%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+} 
+
+.list { 
+    display: block; 
+} 
+
+.list-item { 
+    border-bottom: 1px solid #ccc; 
+    padding: 10px; 
+}

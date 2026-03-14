@@ -1,20 +1,67 @@
-.grid { 
-    display: flex; 
-    flex-wrap: wrap; 
-} 
+#directory-container { 
+    margin: 20px auto; 
+    max-width: 1200px; 
+    padding: 0 15px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
 
-.grid-item { 
-    width: 30%; 
-    margin: 1%; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    padding: 10px; 
-} 
+.directory-list {
+    list-style: none;
+    padding: 0;
+}
 
-.list { 
-    display: block; 
-} 
+.card { 
+    background-color: #ffffff; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    overflow: hidden; 
+    text-align: center; 
+}
+
+.card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.card img { 
+    width: 100%; 
+    height: auto; 
+    max-height: 150px; 
+    object-fit: contain; 
+    padding-top: 15px; 
+}
+
+.card h3 { 
+    color: #2c3e50; 
+    margin: 10px 0; 
+    font-size: 1.2rem; 
+}
+
+.card p { 
+    margin: 5px 0; 
+    color: #555; 
+    font-size: 0.9rem; 
+}
+
+.card a { 
+    display: inline-block; 
+    margin: 10px 0 20px; 
+    color: #007bff; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.card a:hover { 
+    text-decoration: underline; 
+}
+
+/* Integration with chamber.css classes / .grid-item { / Inherits from .card if applied to the same element */ 
 
 .list-item { 
-    border-bottom: 1px solid #ccc; 
-    padding: 10px; 
+    display: flex; 
+    align-items: center;
+    background-color: #f9f9f9; 
+    justify-content: space-between; 
+    text-align: left; 
 }

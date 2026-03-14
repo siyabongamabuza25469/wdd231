@@ -16,7 +16,7 @@ body {
     line-height: 1.6; 
     color: var(--white); 
     background-color: var(--navbar-background-color); 
-    padding: var(--container-padding); /* Vendor extension for font smoothing */ 
+    padding: var(--container-padding);  
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale; 
 }
@@ -83,13 +83,13 @@ nav.navbar {
 .navbar ul {
     display: flex;
     flex-direction: column;
-    list-style-type: none; /* Removes bullet points */
+    list-style-type: none; 
     padding: 0;
     margin: 0;
 }
 
 .navbar li {
-    margin-bottom: 10px; /* Adds spacing between the vertical items */
+    margin-bottom: 10px; 
 }
 
 .navbar a { 

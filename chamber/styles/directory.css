@@ -5,9 +5,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
+/* This class now handles the styling previously done inline */
 .directory-list {
     list-style: none;
     padding: 0;
+    margin: 0; /* Added for better reset consistency */
 }
 
 .card { 

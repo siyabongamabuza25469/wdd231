@@ -1,15 +1,14 @@
-#directory-container { 
-    margin: 20px auto; 
-    max-width: 1200px; 
-    padding: 0 15px; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-}
+:root {
+    --white: #ffffff;
+    --navbar-background-color: #4c11b3;
+    --container-padding: 20px;
+    --main-font: 'Roboto', sans-serif;
+}       
 
-/* This class now handles the styling previously done inline */
-.directory-list {
-    list-style: outside;
-    padding: 0 15px;
-    margin: 0; /* Added for better reset consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .card { 

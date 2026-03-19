@@ -7,8 +7,8 @@
 
 /* This class now handles the styling previously done inline */
 .directory-list {
-    list-style: none;
-    padding: 0;
+    list-style: outside;
+    padding: 0 15px;
     margin: 0; /* Added for better reset consistency */
 }
 

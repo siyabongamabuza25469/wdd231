@@ -3,38 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official Sunnyvale Community Chamber Directory - Connecting local businesses and residents.">
+    
+    <!-- Primary Meta Tags -->
     <title>Sunnyvale Community Chamber Directory</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/chamber.css">
-    <link rel="stylesheet" href="css/directory.css">
-    <link rel="preload" href="data/members.json" as="fetch" crossorigin>
+    <meta name="title" content="Sunnyvale Community Chamber Directory">
+    <meta name="description" content="Discover top-rated local businesses and services in Sunnyvale. Join our community chamber to grow your network and support the heart of our local economy.">
+    <meta name="author" content="Siyabonga Bafanabakhe Mabuza">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sunnyvalechamber.com/index.html">
+    <meta property="og:title" content="Sunnyvale Community Chamber: Your Local Business Directory">
+    <meta property="og:description" content="Explore the official directory connecting local Sunnyvale businesses with the community.">
+    <meta property="og:image" content="https://www.sunnyvalechamber.com/images/og-image.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.sunnyvalechamber.com/">
+    <meta property="twitter:title" content="Sunnyvale Community Chamber Directory">
+    <meta property="twitter:description" content="Explore the official directory connecting local Sunnyvale businesses with the community.">
+    <meta property="twitter:image" content="https://www.sunnyvalechamber.com/images/og-image.jpg">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://www.sunnyvalechamber.com/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Resource Preloading -->
+    <link rel="preload" href="data/members.json" as="fetch" crossorigin="anonymous" />
+
+    <!-- JavaScript -->
     <script src="scripts/directory.js" defer></script>
 </head>
 <body>
-    <header class="site-header" role="banner">
+    <header class="site-header">
   <div class="container">
     <div class="logo">
       <h1><a href="index.html">Sunnyvale Community Chamber Directory</a></h1>
     </div>
-    
-    <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
-      <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-        <span class="screen-reader-text">Menu</span>
-        <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="currentColor"/>
-        </svg>
-      </button>
+  </div>
+    <nav id="site-navigation" class="main-navigation" aria-label="Primary Menu">
+  <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+    <span class="screen-reader-text">Menu</span>
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="currentColor"/>
+    </svg>
+  </button>
+  </nav>
     <ul id="primary-menu" class="nav-menu">
       <li><a href="index.html" tabindex="0">Home</a></li>
       <li><a href="directory.html" tabindex="0">Directory</a></li>
       <li><a href="join.html" tabindex="0">Join</a></li>
       <li><a href="discover.html" tabindex="0">Discover</a></li>
     </ul>
-  </nav>
 </header>
 <main id="directory-root">
   <section class="controls" aria-labelledby="view-control-label">

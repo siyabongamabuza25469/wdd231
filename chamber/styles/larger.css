@@ -1,0 +1,21 @@
+/* larger.css */
+@media only screen and (min-width: 64rem) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        border-bottom: none;
+    }
+.directory-container { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; padding: 2rem; 
+}
+
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; padding: 1rem 5%; } 
+}

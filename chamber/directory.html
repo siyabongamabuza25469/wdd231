@@ -62,27 +62,27 @@
     </ul>
 </header>
 <main id="directory-root">
-  <section class="controls" aria-labelledby="view-control-label">
-    <h2 id="view-control-label" class="visually-hidden">Display Options</h2>
-    <div role="group" aria-label="Toggle display view">
+  <nav class="controls" aria-labelledby="view-control-label">
+    <h2 id="view-control-label" class="sr-only">Directory Display Options</h2>
+    <div role="group" class="view-toggle-group">
       <button 
         id="grid-view-btn" 
         type="button"
-        aria-pressed="true" 
-        onclick="toggleView('grid')">
+        class="btn-toggle"
+        aria-pressed="true"
+        aria-controls="members-container">
         Grid View
       </button>
       <button 
         id="list-view-btn" 
         type="button"
-        aria-pressed="false" 
-        onclick="toggleView('list')">
+        class="btn-toggle"
+        aria-pressed="false"
+        aria-controls="members-container">
         List View
       </button>
     </div>
-  </section>
-  <section id="members-container" aria-live="polite" aria-label="Members Directory">
-  </section>
+  </nav>
 </main>
 <footer>
     <p>Contact Information: <a href="mailto:mshengu25469@gmail.com">mshengu25469@gmail.com</a> | <a href="tel:+27632188736">+27 63 218 8736</a></p>

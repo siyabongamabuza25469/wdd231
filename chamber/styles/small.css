@@ -76,3 +76,10 @@ nav button {
     max-width: 100%; 
     height: auto; 
 }
+
+.weather-iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    overflow: hidden;
+}

@@ -20,8 +20,19 @@ header, footer {
 }
 
 nav.controls {
-  background-color: rgb(74, 73, 73);
-  color: rgb(236, 234, 241); 
+  --nav-bg: #2c3e50;
+  --nav-text: #ffffff;
+background-color: var(--nav-bg); 
+color: var(--nav-text); 
+padding: 10px 15px; 
+display: flex; 
+align-items: center; 
+border-radius: 4px; 
+transition: background-color 0.3s ease; 
+}
+
+nav.controls:hover { 
+    background-color: #34495e; 
 }
 
 
@@ -97,21 +108,20 @@ nav button {
     filter: brightness(70%);  
 }
 
-.hero-content { 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    color: #050505; 
-    width: 90%; 
-    z-index: 2; 
+.hero-content {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  width: 90%;
+  z-index: 2;
 }
 
 .hero-content h2 { 
     font-size: 2.5rem; 
     margin-bottom: 1rem; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
 }
 
 .hero-content p { 

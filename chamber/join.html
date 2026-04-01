@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Join Our Chamber</title>
+    <meta name="title" content="Sunnyvale Community Chamber Home">
+    <meta name="description" content="Welcome to the Sunnyvale Community Chamber of Commerce official website. Discover local businesses, join our community, and stay updated on current events.">
+    <meta name="author" content="Siyabonga Bafanabakhe Mabuza">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sunnyvalechamber.com/index.html">
+    <meta property="og:title" content="Sunnyvale Community Chamber: Welcome">
+    <meta property="og:description" content="Join and support Sunnyvale's thriving local business community.">
+    <meta property="og:image" content="https://www.sunnyvalechamber.com/images/hero-banner.jpg" > 
+    <meta name="twitter:card" content="summary_large_image"> 
+    <meta name="twitter:url" content="https://www.sunnyvalechamber.com/index.html"> 
+    <meta name="twitter:title" content="Sunnyvale Community Chamber: Welcome"> 
+    <meta name="twitter:description" content="Join and support Sunnyvale's thriving local business community."> 
+    <meta name="twitter:image" content="https://www.sunnyvalechamber.com/images/hero-banner.jpg"> 
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"> 
+    <link rel="canonical" href="https://www.sunnyvalechamber.com/"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles/normalize.css">    
+    <link rel="stylesheet" href="styles/small.css">    
+    <link rel="stylesheet" href="styles/larger.css">       
+     <script src="scripts/directory.js" defer></script>
+    </head>
+    <body>    
+        <header class="site-header">        
+            <div class="container">          
+                <div class="logo">                
+                    <h1><a href="join.html">Sunnyvale Community Chamber Directory</a></h1>            
+                </div>        
+            </div>       
+            <nav id="site-navigation" class="main-navigation" aria-label="Primary Menu">           
+                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                </button>
+                <nav class="main-navigation" aria-label="Primary Menu">
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+    <span class="screen-reader-text">Menu</span>
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="currentColor">
+    </svg>
+</button>
+    <ul id="primary-menu" class="nav-menu">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+    </ul>
+</nav>
+</nav>
+</header>
+<main>
+    <h1>Join Sunnyvale Community Chamber Of Commence</h1>
+        <section id="contact-form-section">
+    <h2>Get in Touch With Us</h2>
+    <p>Have been looking for a chamber of commence? Let's content!</p>
+    <form method="get" action="thankyou.html" novalidate>
+  <label for="firstName" title="Enter applicant's first name">
+    First Name:
+    <input
+      type="text"
+      id="firstName"
+      name="firstName"
+      required
+      autocomplete="given-name"
+      title="Applicant's first name"
+      pattern=".*\S.*">
+  </label>
+  <label for="lastName" title="Enter applicant's last name">    
+    Last Name:    
+    <input      
+    type="text"     
+    id="lastName" 
+    name="lastName"      
+    required      
+    autocomplete="family-name"      
+    title="Applicant's last name"      
+    pattern=".*\S.*">    
+</label>
+<label for="orgTitle" title="Enter your organizational title (7+ letters, hyphens, spaces only)">
+    Organizational Title:    
+    <input      
+    type="text"      
+    id="orgTitle"     
+    name="orgTitle"     
+    autocomplete="organization-title"      
+    title="Organizational title: letters, hyphens, spaces, minimum 7 characters"      
+    pattern="[A-Za-z\- ]{7,}">  
+</label>
+<label for="email" title="Enter your email address">    
+    Email Address:    
+    <input      
+    type="email"      
+    id="email"      
+    name="email"      
+    required      
+    autocomplete="email"      
+    title="Valid email address"      
+    placeholder="example@domain.com"> 
+</label>  
+<label for="mobile" 
+title="Enter mobile phone number">    
+Mobile Phone Number:    
+<input      
+type="tel"      
+id="mobile"      
+name="mobile"      
+required      
+autocomplete="tel"      
+title="Mobile phone number"> 
+</label>
+<label for="businessName" title="Enter business or organization name">    
+    Business/Organization Name:    
+    <input      
+    type="text"      
+    id="businessName"      
+    name="businessName"      
+    required      
+    autocomplete="organization"      
+    title="Business or organization name">
+</label>  
+<label for="membershipLevel" 
+title="Select membership level">    
+Membership Level:    
+<select id="membershipLevel" 
+name="membershipLevel" 
+required>     
+<option value="" disabled selected>Select membership level</option>      
+<option value="np">NP Membership (Non Profit - No Fee)</option>      
+<option value="bronze">Bronze Membership</option>      
+<option value="silver">Silver Membership</option>      
+<option value="gold">Gold Membership</option>   
+</select> 
+</label> 
+<label for="description" 
+title="Describe your business or organization">    
+Business/Organization Description:    
+<textarea id="description" 
+name="description" 
+title="Business or organization description">
+</textarea>  
+</label>   
+<input type="hidden" id="timestamp" 
+name="timestamp">  
+<input    type="submit"    
+value="Submit Application"   
+aria-label="Submit membership application">
+</form>
+</section>
+    </main>
+    <footer class="site-footer container">    
+        <p>Contact Information: <a href="mailto:mshengu25469@gmail.com">mshengu25469@gmail.com</a> | <a href="tel:+27632188736">+27 63 218 8736</a></p>
+    <p>Developed by Siyabonga Bafanabakhe Mabuza | WDD 231 | Last Modified: <span id="last-modified"></span></p>    
+        <nav aria-label="Footer Menu">       
+            <ul class="footer-menu">           
+                <li><a href="index.html">Home</a></li>           
+                <li><a href="directory.html">Directory</a></li>            
+                <li><a href="join.html">Join</a></li>           
+                <li><a href="contact.html">Contact</a></li>       
+            </ul>    
+        </nav>
+    </footer>
+</body>
+</html>

@@ -143,3 +143,24 @@ nav button {
 .cta-button:hover { 
     background-color: #003d80; 
 }
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea { width: 100%; /* Full width inputs / padding: 10px; / Inner padding for inputs / border: 1px solid #ccc; / Border color / border-radius: 4px; / Rounded corners / box-sizing: border-box; / Include padding and border in the element's total width and height */ 
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+textarea:focus { border-color: #4CAF50; /* Change border color on focus / outline: none; / Remove outline */ 
+}
+
+main { padding: 20px; /* Padding for main content */ 
+}  
+
+.form-group { margin-bottom: 15px; /* Space between form fields */ 
+}  

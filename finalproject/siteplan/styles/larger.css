@@ -1,0 +1,9 @@
+@media (min-width: 1024px) { 
+.container { 
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);  
+}
+
+.hero, .content { 
+    grid-column: span 12; /* Full width for hero */ 
+} }

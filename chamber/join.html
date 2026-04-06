@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="styles/normalize.css">    
     <link rel="stylesheet" href="styles/small.css">    
     <link rel="stylesheet" href="styles/larger.css">       
-     <script src="scripts/Join.js" defer></script>
+     <script src="scripts/join.js" defer></script>
     </head>
     <body> 
         <header>   
@@ -132,99 +132,86 @@ title="Mobile phone number">
     </select> 
   </label>   
 
-  <section aria-label="Membership Level Cards">
-  <div class="membership-card" id="npCard">
-    <h3>NP Membership</h3>
-    <button 
-      aria-haspopup="dialog" 
-      aria-controls="npModal" 
-      aria-expanded="false" 
-      id="npBtn"
-      onclick="openModal('npModal', this)">
-      View Benefits
-    </button>
-  </div>
-  <dialog id="npModal" aria-modal="true" aria-labelledby="npModalTitle" aria-describedby="npModalDesc">
-    <h2 id="npModalTitle">NP Membership Benefits</h2>
-    <p id="npModalDesc">
-      Non-Profit members enjoy free membership with access to community events, networking opportunities, and newsletters.
-    </p>
-    <button onclick="closeModal('npModal', 'npBtn')">Close</button>
-  </dialog>
-
-  <div class="membership-card" id="bronzeCard">
-    <h3>Bronze Membership</h3>
-    <button 
-      aria-haspopup="dialog" 
-      aria-controls="bronzeModal" 
-      aria-expanded="false" 
-      id="bronzeBtn"
-      onclick="openModal('bronzeModal', this)">
-      View Benefits
-    </button>
-  </div>
-  <dialog id="bronzeModal" aria-modal="true" aria-labelledby="bronzeModalTitle" aria-describedby="bronzeModalDesc">
-    <h2 id="bronzeModalTitle">Bronze Membership Benefits</h2>
-    <p id="bronzeModalDesc">
-      Bronze members receive discounted event tickets, monthly newsletters, and access to the member-only forum.
-    </p>
-    <button onclick="closeModal('bronzeModal', 'bronzeBtn')">Close</button>
-  </dialog>
-
-  <div class="membership-card" id="silverCard">
-    <h3>Silver Membership</h3>
-    <button 
-      aria-haspopup="dialog" 
-      aria-controls="silverModal" 
-      aria-expanded="false" 
-      id="silverBtn"
-      onclick="openModal('silverModal', this)">
-      View Benefits
-    </button>
-  </div>
-  <dialog id="silverModal" aria-modal="true" aria-labelledby="silverModalTitle" aria-describedby="silverModalDesc">
-    <h2 id="silverModalTitle">Silver Membership Benefits</h2>
-    <p id="silverModalDesc">
-      Silver members receive all Bronze benefits plus priority event registration, exclusive quarterly webinars, and a dedicated member badge.
-    </p>
-    <button onclick="closeModal('silverModal', 'silverBtn')">Close</button>
-  </dialog>
-
-  <div class="membership-card" id="goldCard">
-    <h3>Gold Membership</h3>
-    <button 
-      aria-haspopup="dialog" 
-      aria-controls="goldModal" 
-      aria-expanded="false" 
-      id="goldBtn"
-      onclick="openModal('goldModal', this)">
-      View Benefits
-    </button>
-  </div>
-  <dialog id="goldModal" aria-modal="true" aria-labelledby="goldModalTitle" aria-describedby="goldModalDesc">
-    <h2 id="goldModalTitle">Gold Membership Benefits</h2>
-    <p id="goldModalDesc">
-      Gold members receive all Silver benefits plus complimentary access to all major events, private networking sessions with industry leaders, and personalized mentorship opportunities.
-    </p>
-    <button onclick="closeModal('goldModal', 'goldBtn')">Close</button>
-  </dialog>
-
-<form>
-<label for="description" 
-title="Describe your business or organization">    
-Business/Organization Description:    
-<textarea id="description" 
-name="description" 
-title="Business or organization description">
-</textarea>  
-</label>   
-<input type="hidden" id="timestamp" 
-name="timestamp">  
-<input    type="submit"    
-value="Submit Application"   
-aria-label="Submit membership application">
-</form>
-</form>
+  <section aria-label="Membership Level Cards"> 
+    <div class="membership-card" id="npCard"> 
+        <h3>NP Membership</h3> 
+        <button aria-haspopup="dialog" 
+        aria-controls="npModal" 
+        aria-expanded="false" 
+        id="npBtn" onclick="openModal('npModal', this)"> 
+        View Benefits 
+    </button> 
+    </div> 
+    <dialog id="npModal" aria-modal="true" aria-labelledby="npModalTitle" aria-describedby="npModalDesc"> 
+        <h2 id="npModalTitle">NP Membership Benefits</h2> 
+        <p id="npModalDesc"> 
+            Non-Profit members enjoy free membership with access to community events, networking opportunities, and newsletters. 
+        </p> 
+        <button id="closeGoldModal">
+            Close
+        </button> 
+    </dialog> 
+    <div class="membership-card" id="bronzeCard"> 
+        <h3>Bronze Membership</h3> 
+        <button aria-haspopup="dialog" aria-controls="bronzeModal" aria-expanded="false" 
+        id="bronzeBtn" onclick="openModal('bronzeModal', this)"> 
+        View Benefits 
+    </button> 
+</div> 
+<dialog id="bronzeModal" aria-modal="true" aria-labelledby="bronzeModalTitle" aria-describedby="bronzeModalDesc"> 
+    <h2 id="bronzeModalTitle">Bronze Membership Benefits</h2> 
+    <p id="bronzeModalDesc"> 
+        Bronze members receive discounted event tickets, monthly newsletters, and access to the member-only forum. 
+    </p> 
+    <button id="closeGoldModal">
+        Close
+    </button> 
+</dialog> 
+<div class="membership-card" id="silverCard"> 
+    <h3>Silver Membership</h3> 
+    <button aria-haspopup="dialog" aria-controls="silverModal" aria-expanded="false" id="silverBtn" onclick="openModal('silverModal', this)"> 
+        View Benefits 
+    </button> 
+</div> 
+<dialog id="silverModal" aria-modal="true" aria-labelledby="silverModalTitle" aria-describedby="silverModalDesc"> 
+    <h2 id="silverModalTitle">Silver Membership Benefits</h2> 
+    <p id="silverModalDesc"> 
+        Silver members receive all Bronze benefits plus priority event registration, exclusive quarterly webinars, and a dedicated member badge. 
+    </p> 
+    <button id="closeGoldModal">
+        Close
+    </button> 
+</dialog> 
+<div class="membership-card" id="goldCard"> 
+    <h3>Gold Membership</h3> 
+    <button aria-haspopup="dialog" aria-controls="goldModal" aria-expanded="false" id="goldBtn" onclick="openModal('goldModal', this)"> 
+        View Benefits 
+    </button> 
+</div> 
+<dialog id="goldModal" aria-modal="true" aria-labelledby="goldModalTitle" aria-describedby="goldModalDesc"> 
+    <h2 id="goldModalTitle">Gold Membership Benefits</h2> 
+    <p id="goldModalDesc"> 
+        Gold members receive all Silver benefits plus complimentary access to all major events, private networking sessions with industry leaders, and personalized mentorship opportunities. 
+    </p> 
+    <button id="closeGoldModal">
+        Close
+    </button> 
+</dialog> 
+<form> 
+    <label for="description" title="Describe your business or organization"> 
+        Business/Organization Description: 
+        <textarea id="description" 
+        name="description" 
+        title="Business or organization description">
+    </textarea> 
+</label> 
+<input type="hidden" 
+id="timestamp" 
+name="timestamp"> 
+<input type="submit" 
+value="Submit Application" 
+aria-label="Submit membership application"> 
+</form> 
 </section>
     </main>
     <footer class="site-footer container">    

@@ -129,34 +129,34 @@ title="Mobile phone number">
       <option value="bronze">Bronze Membership</option>      
       <option value="silver">Silver Membership</option>      
       <option value="gold">Gold Membership</option>   
-    </select> 
-  <section aria-label="Membership Level Cards">
-  <div class="membership-card" id="npCard">
-    <h3>NP Membership</h3>
-    <!-- The button is now outside of any label element -->
-    <button 
-      type="button"
-      aria-haspopup="dialog" 
-      aria-controls="npModal" 
-      aria-expanded="false" 
-      id="npBtn"
-      onclick="openModal('npModal', this)">
-      View Benefits
-    </button>
-  </div>
-  <dialog id="npModal" aria-modal="true" aria-labelledby="npModalTitle" aria-describedby="npModalDesc">
-    <h2 id="npModalTitle">NP Membership Benefits</h2>
-    <p id="npModalDesc">
-      Non-Profit members enjoy free membership with access to community events, networking opportunities, and newsletters.
-    </p>
-    <button type="button" onclick="closeModal('npModal', 'npBtn')">Close</button>
-  </dialog>
-  </section>
+    </select>
 
-  <section aria-label="Membership Level Cards">
+     <div class="membership-container">
+  <section aria-labelledby="npSectionTitle">
+    <h2 id="npSectionTitle">Membership Level Cards</h2>
+    <div class="membership-card" id="npCard">
+      <h3>NP Membership</h3>
+      <button 
+        type="button"
+        aria-haspopup="dialog" 
+        aria-controls="npModal" 
+        aria-expanded="false" 
+        id="npBtn"
+        onclick="openModal('silverModal', this)">
+        View Benefits
+      </button>
+    </div>
+    <dialog id="npModal" aria-modal="true" aria-labelledby="npModalTitle">
+      <h2 id="npModalTitle">NP Membership Benefits</h2>
+      <p>Non-Profit members enjoy free membership with access to community events, networking opportunities, and newsletters.</p>
+      <button data-modal="npModal">View Benefits/Close</button>
+    </dialog>
+  </section>
+</div>
+
+  <div class="membership-container" aria-label="Membership Level Cards">
   <div class="membership-card" id="bronzeCard">
     <h3>Bronze Membership</h3>
-    <!-- The button is now outside of any label element -->
     <button 
       type="button"
       aria-haspopup="dialog" 
@@ -172,53 +172,55 @@ title="Mobile phone number">
     <p id="bronzeModalDesc">
       Bronze members receive discounted event tickets, monthly newsletters, and access to the member-only forum.
     </p>
-    <button type="button" onclick="closeModal('bronzeModal', 'bronzeBtn')">Close</button>
+    <button data-modal="bronzeModal">View Benefits/Close</button>
   </dialog>
-  </section>
+</div>
 
-  <section aria-label="Membership Level Cards">
-  <div class="membership-card" id="silverCard">
-    <h3>Silver Membership</h3>
-    <!-- The button is now outside of any label element -->
-    <button 
-      type="button"
-      aria-haspopup="dialog" 
-      aria-controls="silverModal" 
-      aria-expanded="false" 
-      id="silverBtn"
-      onclick="openModal('silverModal', this)">
-      View Benefits
-    </button>
-  </div>
-  <dialog id="silverModal" aria-modal="true" aria-labelledby="silverModalTitle">
-    <h2 id="silverModalTitle">Silver Membership Benefits</h2>
-    <p>Silver members receive all Bronze benefits plus priority event registration, exclusive quarterly webinars, and a dedicated member badge.</p>
-    <button type="button" onclick="closeModal('silverModal', 'silverBtn')">Close</button>
-  </dialog>
+  <div class="membership-container">
+  <section aria-labelledby="silverSectionTitle">
+    <h2 id="silverSectionTitle">Membership Level Cards</h2>
+    <div class="membership-card" id="silverCard">
+      <h3>Silver Membership</h3>
+      <button 
+        type="button"
+        aria-haspopup="dialog" 
+        aria-controls="silverModal" 
+        aria-expanded="false" 
+        id="silverBtn"
+        onclick="openModal('silverModal', this)">
+        View Benefits
+      </button>
+    </div>
+    <dialog id="silverModal" aria-modal="true" aria-labelledby="silverModalTitle">
+      <h2 id="silverModalTitle">Silver Membership Benefits</h2>
+      <p>Silver members receive all Bronze benefits plus priority event registration, exclusive quarterly webinars, and a dedicated member badge.</p>
+      <button data-modal="silverModal">View Benefits/Close</button>
+    </dialog>
   </section>
+</div>
 
-  <section aria-label="Membership Level Cards">
-  <div class="membership-card" id="goldCard">
-    <h3>Gold Membership</h3>
-    <!-- Removed the invalid label wrapper -->
-    <button 
-      type="button"
-      aria-haspopup="dialog" 
-      aria-controls="goldModal" 
-      aria-expanded="false" 
-      id="goldBtn"
-      onclick="openModal('goldModal', this)">
-      View Benefits
-    </button>
-  </div>
-  <dialog id="goldModal" aria-modal="true" aria-labelledby="goldModalTitle" aria-describedby="goldModalDesc">
-    <h2 id="goldModalTitle">Gold Membership Benefits</h2>
-    <p id="goldModalDesc">
-      Gold members receive all Silver benefits plus complimentary access to all major events, private networking sessions with industry leaders, and personalized mentorship opportunities.
-    </p>
-    <button type="button" onclick="closeModal('goldModal', 'goldBtn')">Close</button>
-  </dialog>
-</section>
+  <div class="membership-container">
+  <section aria-labelledby="goldSectionTitle">
+    <h2 id="goldSectionTitle">Membership Level Cards</h2>
+    <div class="membership-card" id="goldCard">
+      <h3>Gold Membership</h3>
+      <button 
+        type="button"
+        aria-haspopup="dialog" 
+        aria-controls="goldModal" 
+        aria-expanded="false" 
+        id="goldBtn"
+        onclick="openModal('goldModal', this)">
+        View Benefits
+      </button>
+    </div>
+    <dialog id="goldModal" aria-modal="true" aria-labelledby="goldModalTitle">
+      <h2 id="goldModalTitle">Gold Membership Benefits</h2>
+      <p>Gold members receive all Silver benefits plus complimentary access to all major events, private networking sessions with industry leaders, and personalized mentorship opportunities.</p>
+      <button data-modal="goldModal">View Benefits/Close</button>
+    </dialog>
+  </section>
+</div>
 
 <form>
 <label for="description" 

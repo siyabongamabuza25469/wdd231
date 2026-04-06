@@ -133,7 +133,9 @@ title="Mobile phone number">
   <section aria-label="Membership Level Cards">
   <div class="membership-card" id="npCard">
     <h3>NP Membership</h3>
+    <!-- The button is now outside of any label element -->
     <button 
+      type="button"
       aria-haspopup="dialog" 
       aria-controls="npModal" 
       aria-expanded="false" 
@@ -147,12 +149,16 @@ title="Mobile phone number">
     <p id="npModalDesc">
       Non-Profit members enjoy free membership with access to community events, networking opportunities, and newsletters.
     </p>
-    <button onclick="closeModal('npModal', 'npBtn')">Close</button>
+    <button type="button" onclick="closeModal('npModal', 'npBtn')">Close</button>
   </dialog>
+  </section>
 
+  <section aria-label="Membership Level Cards">
   <div class="membership-card" id="bronzeCard">
     <h3>Bronze Membership</h3>
+    <!-- The button is now outside of any label element -->
     <button 
+      type="button"
       aria-haspopup="dialog" 
       aria-controls="bronzeModal" 
       aria-expanded="false" 
@@ -166,12 +172,16 @@ title="Mobile phone number">
     <p id="bronzeModalDesc">
       Bronze members receive discounted event tickets, monthly newsletters, and access to the member-only forum.
     </p>
-    <button onclick="closeModal('bronzeModal', 'bronzeBtn')">Close</button>
+    <button type="button" onclick="closeModal('bronzeModal', 'bronzeBtn')">Close</button>
   </dialog>
+  </section>
 
+  <section aria-label="Membership Level Cards">
   <div class="membership-card" id="silverCard">
     <h3>Silver Membership</h3>
+    <!-- The button is now outside of any label element -->
     <button 
+      type="button"
       aria-haspopup="dialog" 
       aria-controls="silverModal" 
       aria-expanded="false" 
@@ -180,17 +190,19 @@ title="Mobile phone number">
       View Benefits
     </button>
   </div>
-  <dialog id="silverModal" aria-modal="true" aria-labelledby="silverModalTitle" aria-describedby="silverModalDesc">
+  <dialog id="silverModal" aria-modal="true" aria-labelledby="silverModalTitle">
     <h2 id="silverModalTitle">Silver Membership Benefits</h2>
-    <p id="silverModalDesc">
-      Silver members receive all Bronze benefits plus priority event registration, exclusive quarterly webinars, and a dedicated member badge.
-    </p>
-    <button onclick="closeModal('silverModal', 'silverBtn')">Close</button>
+    <p>Silver members receive all Bronze benefits plus priority event registration, exclusive quarterly webinars, and a dedicated member badge.</p>
+    <button type="button" onclick="closeModal('silverModal', 'silverBtn')">Close</button>
   </dialog>
+  </section>
 
+  <section aria-label="Membership Level Cards">
   <div class="membership-card" id="goldCard">
     <h3>Gold Membership</h3>
+    <!-- Removed the invalid label wrapper -->
     <button 
+      type="button"
       aria-haspopup="dialog" 
       aria-controls="goldModal" 
       aria-expanded="false" 
@@ -204,8 +216,9 @@ title="Mobile phone number">
     <p id="goldModalDesc">
       Gold members receive all Silver benefits plus complimentary access to all major events, private networking sessions with industry leaders, and personalized mentorship opportunities.
     </p>
-    <button onclick="closeModal('goldModal', 'goldBtn')">Close</button>
+    <button type="button" onclick="closeModal('goldModal', 'goldBtn')">Close</button>
   </dialog>
+</section>
 
 <form>
 <label for="description" 

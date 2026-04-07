@@ -53,192 +53,173 @@
     </nav>
     
 </header>
-<main>
-    <section id="contact-form-section">
-    <p>Have Been Looking For A Chamber Of Commence? Let's Connect!</p>
+<h1>Membership Application Form</h1>
+  <main class="container">
+    <!-- Form -->
     <form method="get" action="thankyou.html" novalidate>
-  <label for="firstName" title="Enter applicant's first name">
-    First Name:
-    <input
-      type="text"
-      id="firstName"
-      name="firstName"
-      required
-      autocomplete="given-name"
-      title="Applicant's first name"
-      pattern=".*\S.*">
-  </label>
-  <label for="lastName" title="Enter applicant's last name">    
-    Last Name:    
-    <input      
-    type="text"     
-    id="lastName" 
-    name="lastName"      
-    required      
-    autocomplete="family-name"      
-    title="Applicant's last name"      
-    pattern=".*\S.*">    
-</label>
-<label for="orgTitle" title="Enter your organizational title (7+ letters, hyphens, spaces only)">
-    Organizational Title:    
-    <input      
-    type="text"      
-    id="orgTitle"     
-    name="orgTitle"     
-    autocomplete="organization-title"      
-    title="Organizational title: letters, hyphens, spaces, minimum 7 characters"      
-    pattern="[A-Za-z\- ]{7,}">  
-</label>
-<label for="email" title="Enter your email address">    
-    Email Address:    
-    <input      
-    type="email"      
-    id="email"      
-    name="email"      
-    required      
-    autocomplete="email"      
-    title="Valid email address"      
-    placeholder="example@domain.com"> 
-</label>  
-<label for="mobile" 
-title="Enter mobile phone number">    
-Mobile Phone Number:    
-<input      
-type="tel"      
-id="mobile"      
-name="mobile"      
-required      
-autocomplete="tel"      
-title="Mobile phone number"> 
-</label>
-<label for="businessName" title="Enter business or organization name">    
-    Business/Organization Name:    
-    <input      
-    type="text"      
-    id="businessName"      
-    name="businessName"      
-    required      
-    autocomplete="organization"      
-    title="Business or organization name">
-</label>  
-<label for="membershipLevel" title="Select membership level">    
-    Membership Level:    
-    <select id="membershipLevel" name="membershipLevel" required>     
-      <option value="" disabled selected>Select membership level</option>      
-      <option value="np">NP Membership (Non Profit - No Fee)</option>      
-      <option value="bronze">Bronze Membership</option>      
-      <option value="silver">Silver Membership</option>      
-      <option value="gold">Gold Membership</option>   
-    </select>
+      <label for="firstName" title="Applicant's First Name">
+        First Name:
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          title="Applicant's First Name"
+          autocomplete="given-name"
+          required
+        />
+      </label>
 
-     <div class="membership-container">
-  <section aria-labelledby="npSectionTitle">
-    <h2 id="npSectionTitle">Membership Level Cards</h2>
-    <div class="membership-card" id="npCard">
-      <h3>NP Membership</h3>
-      <button 
-        type="button"
-        aria-haspopup="dialog" 
-        aria-controls="npModal" 
-        aria-expanded="false" 
-        id="npBtn"
-        onclick="openModal('silverModal', this)">
-        View Benefits
-      </button>
-    </div>
-    <dialog id="npModal" aria-modal="true" aria-labelledby="npModalTitle">
-      <h2 id="npModalTitle">NP Membership Benefits</h2>
+      <label for="lastName" title="Applicant's Last Name">
+        Last Name:
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          title="Applicant's Last Name"
+          autocomplete="family-name"
+          required
+        />
+      </label>
+
+      <label for="orgTitle" title="Applicant's organizational title">
+        Organizational Title:
+        <input
+          type="text"
+          id="orgTitle"
+          name="orgTitle"
+          title="Applicant's organizational title"
+          autocomplete="organization-title"
+          pattern="[A-Za-z\s\-]{7,}"
+          aria-describedby="orgTitleHint"
+        />
+        <small id="orgTitleHint">Only letters, spaces, or hyphens; min 7 characters</small>
+      </label>
+
+      <label for="email" title="Applicant's Email Address">
+        Email Address:
+        <input
+          type="email"
+          id="email"
+          name="email"
+          title="Applicant's Email Address"
+          autocomplete="email"
+          placeholder="example@email.com"
+          required
+        />
+      </label>
+
+      <label for="mobile" title="Applicant's Mobile Phone Number">
+        Mobile Phone Number:
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          title="Applicant's Mobile Phone Number"
+          autocomplete="tel"
+          required
+        />
+      </label>
+
+      <label for="businessName" title="Business or Organization Name">
+        Business / Organization Name:
+        <input
+          type="text"
+          id="businessName"
+          name="businessName"
+          title="Business or Organization Name"
+          autocomplete="organization"
+          required
+        />
+      </label>
+
+      <label for="membershipLevel" title="Select your membership level">
+        Membership Level:
+        <select
+          id="membershipLevel"
+          name="membershipLevel"
+          title="Select your membership level"
+          required
+        >
+          <option value="" disabled selected>Select a level</option>
+          <option value="np">NP Membership (Non Profit - no fee)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label for="orgDescription" title="Description of your business or organization">
+        Business / Organization Description:
+        <textarea
+          id="orgDescription"
+          name="orgDescription"
+          title="Description of your business or organization"
+          rows="4"
+        ></textarea>
+      </label>
+
+      <input
+        type="hidden"
+        id="timestamp"
+        name="timestamp"
+        title="Timestamp when the form loaded"
+      />
+
+      <input type="submit" value="Submit Application" />
+    </form>
+
+    <!-- Membership Cards -->
+    <section aria-label="Membership Levels and Benefits" class="membership-cards">
+      <article class="card" tabindex="0" aria-describedby="npModalDesc" aria-controls="npModal">
+        <h2>NP Membership</h2>
+        <a href="#npModal" role="button" aria-haspopup="dialog" aria-expanded="false">View Benefits</a>
+      </article>
+      <article class="card" tabindex="0" aria-describedby="bronzeModalDesc" aria-controls="bronzeModal">
+        <h2>Bronze Membership</h2>
+        <a href="#bronzeModal" role="button" aria-haspopup="dialog" aria-expanded="false">View Benefits</a>
+      </article>
+      <article class="card" tabindex="0" aria-describedby="silverModalDesc" aria-controls="silverModal">
+        <h2>Silver Membership</h2>
+        <a href="#silverModal" role="button" aria-haspopup="dialog" aria-expanded="false">View Benefits</a>
+      </article>
+      <article class="card" tabindex="0" aria-describedby="goldModalDesc" aria-controls="goldModal">
+        <h2>Gold Membership</h2>
+        <a href="#goldModal" role="button" aria-haspopup="dialog" aria-expanded="false">View Benefits</a>
+      </article>
+      </section>
+      <!-- Modals for Membership Benefits -->
+  <div id="npModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="npModalTitle" tabindex="-1" hidden>
+    <div class="modal-content">
+      <h3 id="npModalTitle">NP Membership Benefits</h3>
       <p>Non-Profit members enjoy free membership with access to community events, networking opportunities, and newsletters.</p>
-      <button data-modal="npModal">View Benefits/Close</button>
-    </dialog>
-  </section>
-</div>
-
-  <div class="membership-container" aria-label="Membership Level Cards">
-  <div class="membership-card" id="bronzeCard">
-    <h3>Bronze Membership</h3>
-    <button 
-      type="button"
-      aria-haspopup="dialog" 
-      aria-controls="bronzeModal" 
-      aria-expanded="false" 
-      id="bronzeBtn"
-      onclick="openModal('bronzeModal', this)">
-      View Benefits
-    </button>
+      <button class="close-modal" aria-label="Close NP Membership Benefits Modal">&times;</button>
+    </div>
   </div>
-  <dialog id="bronzeModal" aria-modal="true" aria-labelledby="bronzeModalTitle" aria-describedby="bronzeModalDesc">
-    <h2 id="bronzeModalTitle">Bronze Membership Benefits</h2>
-    <p id="bronzeModalDesc">
-      Bronze members receive discounted event tickets, monthly newsletters, and access to the member-only forum.
-    </p>
-    <button data-modal="bronzeModal">View Benefits/Close</button>
-  </dialog>
-</div>
 
-  <div class="membership-container">
-  <section aria-labelledby="silverSectionTitle">
-    <h2 id="silverSectionTitle">Membership Level Cards</h2>
-    <div class="membership-card" id="silverCard">
-      <h3>Silver Membership</h3>
-      <button 
-        type="button"
-        aria-haspopup="dialog" 
-        aria-controls="silverModal" 
-        aria-expanded="false" 
-        id="silverBtn"
-        onclick="openModal('silverModal', this)">
-        View Benefits
-      </button>
+  <div id="bronzeModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="bronzeModalTitle" tabindex="-1" hidden>
+    <div class="modal-content">
+      <h3 id="bronzeModalTitle">Bronze Membership Benefits</h3>
+      <p>Bronze members receive discounted event tickets, monthly newsletters, and access to the member-only forum.</p>
+      <button class="close-modal" aria-label="Close Bronze Membership Benefits Modal">&times;</button>
     </div>
-    <dialog id="silverModal" aria-modal="true" aria-labelledby="silverModalTitle">
-      <h2 id="silverModalTitle">Silver Membership Benefits</h2>
+  </div>
+
+  <div id="silverModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="silverModalTitle" tabindex="-1" hidden>
+    <div class="modal-content">
+      <h3 id="silverModalTitle">Silver Membership Benefits</h3>
       <p>Silver members receive all Bronze benefits plus priority event registration, exclusive quarterly webinars, and a dedicated member badge.</p>
-      <button data-modal="silverModal">View Benefits/Close</button>
-    </dialog>
-  </section>
-</div>
-
-  <div class="membership-container">
-  <section aria-labelledby="goldSectionTitle">
-    <h2 id="goldSectionTitle">Membership Level Cards</h2>
-    <div class="membership-card" id="goldCard">
-      <h3>Gold Membership</h3>
-      <button 
-        type="button"
-        aria-haspopup="dialog" 
-        aria-controls="goldModal" 
-        aria-expanded="false" 
-        id="goldBtn"
-        onclick="openModal('goldModal', this)">
-        View Benefits
-      </button>
+      <button class="close-modal" aria-label="Close Silver Membership Benefits Modal">&times;</button>
     </div>
-    <dialog id="goldModal" aria-modal="true" aria-labelledby="goldModalTitle">
-      <h2 id="goldModalTitle">Gold Membership Benefits</h2>
-      <p>Gold members receive all Silver benefits plus complimentary access to all major events, private networking sessions with industry leaders, and personalized mentorship opportunities.</p>
-      <button data-modal="goldModal">View Benefits/Close</button>
-    </dialog>
-  </section>
-</div>
+  </div>
 
-<form>
-<label for="description" 
-title="Describe your business or organization">    
-Business/Organization Description:    
-<textarea id="description" 
-name="description" 
-title="Business or organization description">
-</textarea>  
-</label>   
-<input type="hidden" id="timestamp" 
-name="timestamp">  
-<input    type="submit"    
-value="Submit Application"   
-aria-label="Submit membership application">
-</form>
-</section>
-</main>
+  <div id="goldModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="goldModalTitle" tabindex="-1" hidden>
+    <div class="modal-content">
+      <h3 id="goldModalTitle">Gold Membership Benefits</h3>
+      <p>Gold members receive all Silver benefits plus complimentary access to all major events, private networking sessions with industry leaders, and personalized mentorship opportunities.</p>
+      <button class="close-modal" aria-label="Close Gold Membership Benefits Modal">&times;</button>
+    </div>
+  </div>
+  </main>
 <footer class="site-footer container">    
     <p>Contact Information: <a href="mailto:mshengu25469@gmail.com">mshengu25469@gmail.com</a> | <a href="tel:+27632188736">+27 63 218 8736</a></p>
 <p>Developed by Siyabonga Bafanabakhe Mabuza | WDD 231 | Last Modified: <span id="last-modified"></span></p>    

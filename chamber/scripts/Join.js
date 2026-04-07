@@ -1,16 +1,11 @@
-const buttons = document.querySelectorAll('button[aria-haspopup="dialog"]');
-const lastModified = new Date().toISOString();
+document.addEventListener('DOMContentLoaded', () => { const modal = document.getElementById('myModal'); const openBtn = document.getElementById('openModalBtn'); const closeBtn = document.querySelector('.close-btn'); const timestampField = document.getElementById('lastModified');
 
-buttons.forEach(button => {
-  const modalId = button.getAttribute('aria-controls');
-  const modal = document.getElementById(modalId);
-button.addEventListener('click', () => { // Update metadata attributes button.setAttribute('data-last-modified', lastModified); button.setAttribute('name', 'membership-action');
+const updateTimestamp = () => {
+    timestampField.value = new Date().toISOString();
+};
+openBtn.addEventListener('click', () => { modal.style.display = 'block'; updateTimestamp(); });
 
-// Programmatically trigger modal
-if (typeof modal.showModal === 'function') {
-  modal.showModal();
-  button.setAttribute('aria-expanded', 'true');
-}
-}); });
-
-// Logic for closing modals document.querySelectorAll('dialog button').forEach(closeBtn => { closeBtn.addEventListener('click', () => { const modal = closeBtn.closest('dialog'); modal.close(); const triggerBtn = document.querySelector([aria-controls="${modal.id}"]); triggerBtn.setAttribute('aria-expanded', 'false'); }); });
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+window.addEventListener('click', (event) => { if (event.target === modal) { modal.style.display = 'none'; } }); });

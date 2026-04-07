@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="styles/normalize.css">    
     <link rel="stylesheet" href="styles/small.css">    
     <link rel="stylesheet" href="styles/larger.css">       
-     <script src="scripts/join.js" defer></script>
+     <script src="scripts/directory.js" defer></script>
     </head>
     <body> 
         <header>   
@@ -53,7 +53,6 @@
     </nav>
     
 </header>
-<h1>Membership Application Form</h1>
   <main class="container">
     <!-- Form -->
     <form method="get" action="thankyou.html" novalidate>
@@ -66,7 +65,7 @@
           title="Applicant's First Name"
           autocomplete="given-name"
           required
-        />
+        >
       </label>
 
       <label for="lastName" title="Applicant's Last Name">
@@ -78,7 +77,7 @@
           title="Applicant's Last Name"
           autocomplete="family-name"
           required
-        />
+        >
       </label>
 
       <label for="orgTitle" title="Applicant's organizational title">
@@ -91,7 +90,7 @@
           autocomplete="organization-title"
           pattern="[A-Za-z\s\-]{7,}"
           aria-describedby="orgTitleHint"
-        />
+        >
         <small id="orgTitleHint">Only letters, spaces, or hyphens; min 7 characters</small>
       </label>
 
@@ -105,7 +104,7 @@
           autocomplete="email"
           placeholder="example@email.com"
           required
-        />
+        >
       </label>
 
       <label for="mobile" title="Applicant's Mobile Phone Number">
@@ -117,7 +116,7 @@
           title="Applicant's Mobile Phone Number"
           autocomplete="tel"
           required
-        />
+        >
       </label>
 
       <label for="businessName" title="Business or Organization Name">
@@ -129,7 +128,7 @@
           title="Business or Organization Name"
           autocomplete="organization"
           required
-        />
+        >
       </label>
 
       <label for="membershipLevel" title="Select your membership level">
@@ -163,9 +162,9 @@
         id="timestamp"
         name="timestamp"
         title="Timestamp when the form loaded"
-      />
+      >
 
-      <input type="submit" value="Submit Application" />
+      <input type="submit" value="Submit Application" >
     </form>
 
     <!-- Membership Cards -->

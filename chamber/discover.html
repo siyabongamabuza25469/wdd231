@@ -34,35 +34,106 @@
      <script type="module" src="data/userData.mjs"></script>
     </head>
     <body> 
-        <header>   
+    <header>   
         <nav class="site-header">        
             <div class="container">          
                 <div class="logo">                
                     <h1><a href="discover.html">Sunnyvale Community Chamber Directory</a></h1>            
                 </div>        
             </div>
-                   
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Primary Menu">
-    <span class="screen-reader-text">Menu</span>
-    <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="currentColor"></path>
-    </svg>
-</button>
-    <ul id="primary-menu" class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="discover.html" aria-current="page">Discover</a></li>
-    </ul>
-    </nav>
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Primary Menu">
+                <span class="screen-reader-text">Menu</span>
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="currentColor"></path>
+                </svg>
+            </button>
+            <ul id="primary-menu" class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html" aria-current="page">Discover</a></li>
+            </ul>
+        </nav>
     </header>   
+    <div id="visit-message" role="region" aria-live="polite"></div>
     <!-- Visitor Message Area -->    
     <section id="visitor-message" role="alert" aria-live="polite" tabindex="0" class="visitor-message">        
         <!-- JS will dynamically insert welcome/back/last visited messages here -->    
-        </section>    
-        <!-- Main Discover Section with Cards Grid -->    
-        <main id="discover-main" class="discover-grid container" aria-label="Discover items of interest">        
-            <!-- Cards will be injected dynamically by JavaScript -->    
-            </main>    
+    </section>    
+
+    <!-- Main Discover Section with Cards Grid -->    
+    <main id="discover-main" class="discover-grid container" aria-label="Discover items of interest">
+        <article class="card">
+            <h2>Sunshine Bakery</h2>
+            <figure>
+                <img src="images/storefront.webp" alt="Sunshines Bakery storefront" width="300" height="200">
+            </figure>
+            <address>123 Sunnyvale St</address>
+            <p>Delighting Sunnyvale with fresh breads and pastries made daily from local ingredients.</p>
+            <button type="button">Learn more</button>
+        </article>
+        <article class="card">
+            <h2>Tech Solutions</h2>
+            <figure>
+                <img src="images/solutions.webp" alt="Tech Solutions office" width="300" height="200">
+            </figure>
+            <address>456 Tech Ave</address>
+            <p>Innovative IT services helping businesses optimize performance and security.</p>
+            <button type="button">Learn more</button>
+        </article>
+        <article class="card">
+            <h2>Green Gardens</h2>
+            <figure>
+                <img src="images/landscaping.webp" alt="Green Gardens landscaping" width="300" height="200">
+            </figure>
+            <address>789 Garden Blvd</address>
+            <p>Beautifying yards and public spaces with sustainable landscaping designs.</p>
+            <button type="button">Learn more</button>
+        </article>
+        <article class="card">
+            <h2>BlueWave Marketing</h2>
+            <figure>
+                <img src="images/bluewave.webp" alt="BlueWave Marketing people inside office" width="300" height="200">
+            </figure>
+            <address>321 Bluewave Rd</address>
+            <p>Creative marketing strategies that drive results.</p>
+            <button type="button">Learn more</button>
+        </article>
+        <article class="card">
+            <h2>Sunset Fitness</h2>
+            <figure>
+                <img src="images/sunset-fitness.webp" alt="Sunset Fitness gym interior" width="300" height="200">
+            </figure>
+            <address>654 Sunset Blvd</address>
+            <p>Health and wellness programs tailored to your needs.</p>
+            <button type="button">Learn more</button>
+        </article>
+        <article class="card">
+            <h2>BrightFuture Consulting</h2>
+            <figure>
+                <img src="images/brightfuture.webp" alt="BrightFuture Consulting office" width="300" height="200">
+            </figure>
+            <address>987 BrightFuture Ln</address>
+            <p>Business consulting to unlock your potential.</p>
+            <button type="button">Learn more</button>
+        </article>
+            <article class="card">
+               <h2>Lakeside Cafe</h2>
+            <figure>
+                <img src="images/lakeside-cafe.webp" alt="Lakeside Cafe interior" width="300" height="200">
+            </figure>
+            <address>159 Lakeside Dr</address>
+            <p>Cozy cafe serving locally sourced dishes and drinks.</p>
+        <button type="button">Learn more</button>
+        </article>
+            <article class="card">
+               <h2>Mountain View Books</h2>
+            <figure>
+                <img src="images/mountain-view-books.webp" alt="Mountain View Books storefront" width="300" height="200">
+            </figure>
+            <address>753 Book St</address>
+            <p>Your neighborhood bookstore with a wide variety of genres.</p>
+        <button type="button">Learn more</button>
+        </article>    
             <footer class="site-footer container">    
         <p>Contact Information: <a href="mailto:mshengu25469@gmail.com">mshengu25469@gmail.com</a> | <a href="tel:+27632188736">+27 63 218 8736</a></p>
         <p>Developed by Siyabonga Bafanabakhe Mabuza | WDD 231 | Last Modified: <span id="last-modified"></span></p>    

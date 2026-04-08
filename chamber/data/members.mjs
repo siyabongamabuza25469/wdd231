@@ -2,7 +2,7 @@ export const members = [    {
     name: "Sunshine Bakery",         
     membership: "Gold",         
     description: "Delighting Sunnyvale with fresh breads and pastries made daily from local ingredients.",         
-    image: "images/storefront.jpg",         
+    image: "images/storefront.webp",         
     alt: "Sunshine Bakery storefront",        
     address: "123 Sunnyvale St"     
 },     
@@ -10,7 +10,7 @@ export const members = [    {
     name: "Tech Solutions",         
     membership: "Silver",         
     description: "Innovative IT services helping businesses optimize performance and security.",         
-    image: "images/solutions.jpg",         
+    image: "images/solutions.webp",         
     alt: "Tech Solutions office",        
     address: "456 Tech Ave"    
 },    
@@ -18,7 +18,7 @@ export const members = [    {
     name: "Green Gardens",         
     membership: "Bronze",         
     description: "Beautifying yards and public spaces with sustainable landscaping designs.",         
-    image: "images/landscaping.jpg",         
+    image: "images/landscaping.webp",         
     alt: "Green Gardens landscaping",       
     address: "789 Garden Blvd"    
 },     
@@ -26,7 +26,7 @@ export const members = [    {
     name: "BlueWave Marketing",         
     membership: "Gold",         
     description: "Creative marketing strategies that drive results.",         
-    image: "images/bluewave.jpg",         
+    image: "images/bluewave.webp",         
     alt: "BlueWave Marketing office",        
     address: "321 Bluewave Rd"    
 },     
@@ -34,7 +34,7 @@ export const members = [    {
     name: "Sunset Fitness",         
     membership: "Silver",         
     description: "Health and wellness programs tailored to your needs.",         
-    image: "images/sunset-fitness.jpg",         
+    image: "images/sunset-fitness.webp",         
     alt: "Sunset Fitness gym interior",        
     address: "654 Sunset Blvd"    
 },    
@@ -42,7 +42,7 @@ export const members = [    {
     name: "BrightFuture Consulting",         
     membership: "Bronze",         
     description: "Business consulting to unlock your potential.",         
-    image: "images/brightfuture.jpg",         
+    image: "images/brightfuture.webp",         
     alt: "BrightFuture Consulting office",        
     address: "987 BrightFuture Ln"    
 },     
@@ -50,7 +50,7 @@ export const members = [    {
     name: "Lakeside Cafe",         
     membership: "Silver",         
     description: "Cozy cafe serving locally sourced dishes and drinks.",         
-    image: "images/lakeside-cafe.jpg",         
+    image: "images/lakeside-cafe.webp",         
     alt: "Lakeside Cafe interior",       
     address: "159 Lakeside Dr"    
 },    
@@ -58,7 +58,7 @@ export const members = [    {
     name: "Mountain View Books",          
     membership: "Gold",        
     description: "Your neighborhood bookstore with a wide variety of genres.",         
-    image: "images/mountain-view-books.jpg",         
+    image: "images/mountain-view-books.webp",         
     alt: "Mountain View Books storefront",        
     address: "753 Book St"    
 }];

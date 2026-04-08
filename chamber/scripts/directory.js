@@ -2,9 +2,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------- Timestamp Field ----------
   const timestampInput = document.getElementById('timestamp');
   if (timestampInput) {
-    // Set timestamp as ISO string (you can adjust formatting if needed)
     const now = new Date();
     timestampInput.value = now.toISOString();
+  }
+
+  // ---------- Update Last Modified ----------
+  const lastModifiedEl = document.getElementById('lastModified');
+  if (lastModifiedEl) {
+    const lastModDate = new Date(document.lastModified);
+    // Format nicely, e.g. "April 7, 2026, 15:30"
+    lastModifiedEl.textContent = lastModDate.toLocaleString(undefined, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
   }
 
   // ---------- Modal Functionality ----------

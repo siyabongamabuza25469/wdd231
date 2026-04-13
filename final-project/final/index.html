@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Stellar Travel Co. | Submit Your Travel Info</title>
+    <meta name="description" content="Submit your travel preferences and see your personalized info." >
+    <meta name="author" content="Siyabonga Bafanabakhe Mabuza" >
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Stellar Travel Co. | Submit Your Travel Info" >
+    <meta property="og:description" content="Enter your travel details and get personalized recommendations." >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/final/index.html" >
+    <meta property="og:image" content="../images/og-travel.jpg" >
+
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" >
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="../styles/normalize.css" >
+    <link rel="stylesheet" href="../styles/small.css" >
+    <link rel="stylesheet" href="../styles/larger.css" >
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container">
+        <div class="logo">
+            <h1><a href="../index.html">Stellar Travel Co.</a></h1>
+        </div>
+
+        <nav id="site-navigation" class="main-navigation" aria-label="Primary Menu">
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="screen-reader-text">Menu</span>
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="currentColor" />
+                </svg>
+            </button>
+            <ul id="primary-menu" class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="index.html" aria-current="page">Final Project</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section>
+        <h2>Travel Information Form</h2>
+        <p>Please enter your travel preferences below:</p>
+
+        <form id="travel-form" method="get" action="index.html" novalidate>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="50" >
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="destination">Preferred Destination:</label>
+            <input type="text" id="destination" name="destination" required minlength="2" maxlength="50" >
+
+            <label for="travel-date">Preferred Travel Date:</label>
+            <input type="date" id="travel-date" name="travel_date" required >
+
+            <label for="newsletter">Subscribe to Newsletter?</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="Yes">
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="submitted-data" aria-live="polite" style="margin-top: 2em;">
+        <!-- Submitted form data will be displayed here -->
+    </section>
+</main>
+<!-- Modal Dialog -->
+<div id="info-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true" tabindex="-1">
+    <div class="modal-content">
+        <button type="button" class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal-title">Important Travel Information</h2>
+        <p>Thank you for submitting your travel preferences! We will contact you with personalized recommendations shortly.</p>
+    </div>
+</div>
+
+<footer>
+        <p><a href="resources.html">Resource Attributions</a></p>
+        <p><a href="https://youtu.be/your-video-link" target="_blank" rel="noopener">Video Demo and Reflection</a></p>
+        <p>Contact Information: <a href="mailto:mshengu25469@gmail.com">mshengu25469@gmail.com</a> | <a href="tel:+27632188736">+27 63 218 8736</a></p>
+        <p>Developed by Siyabonga Bafanabakhe Mabuza | WDD 231 | Last Modified: <span id="last-modified"></span></p> 
+    </footer>
+</body>
+</html>

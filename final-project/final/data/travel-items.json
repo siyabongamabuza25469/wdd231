@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Tropical Paradise",
+    "location": "Bali, Indonesia",
+    "price": "$1200",
+    "duration": "7 days",
+    "description": "Enjoy sunny beaches and amazing culture in Bali."
+  },
+  {
+    "id": 2,
+    "name": "Alpine Adventure",
+    "location": "Swiss Alps, Switzerland",
+    "price": "$1500",
+    "duration": "10 days",
+    "description": "Experience breathtaking mountain views and skiing."
+  },
+  {
+    "id": 3,
+    "name": "City Lights",
+    "location": "New York City, USA",
+    "price": "$1000",
+    "duration": "5 days",
+    "description": "Explore the energetic city life and iconic landmarks."
+  },
+  {
+    "id": 4,
+    "name": "Safari Expedition",
+    "location": "Maasai Mara, Kenya",
+    "price": "$1800",
+    "duration": "8 days",
+    "description": "Witness incredible wildlife up close on safari rides."
+  },
+  {
+    "id": 5,
+    "name": "Ancient Ruins",
+    "location": "Machu Picchu, Peru",
+    "price": "$1400",
+    "duration": "7 days",
+    "description": "Hike the Inca trail and discover lost civilizations."
+  },
+  {
+    "id": 6,
+    "name": "Beach Escape",
+    "location": "Maldives",
+    "price": "$2100",
+    "duration": "6 days",
+    "description": "Relax in overwater bungalows surrounded by turquoise waters."
+  },
+  {
+    "id": 7,
+    "name": "Cultural Journey",
+    "location": "Kyoto, Japan",
+    "price": "$1300",
+    "duration": "7 days",
+    "description": "Explore temples, gardens, and traditional tea ceremonies."
+  },
+  {
+    "id": 8,
+    "name": "Desert Oasis",
+    "location": "Dubai, UAE",
+    "price": "$1100",
+    "duration": "5 days",
+    "description": "Experience luxury shopping and desert safaris."
+  },
+  {
+    "id": 9,
+    "name": "Rainforest Retreat",
+    "location": "Amazon Basin, Brazil",
+    "price": "$1700",
+    "duration": "9 days",
+    "description": "Explore biodiversity in the heart of the jungle."
+  },
+  {
+    "id": 10,
+    "name": "Historic Europe",
+    "location": "Rome, Italy",
+    "price": "$1250",
+    "duration": "6 days",
+    "description": "Visit ancient ruins, museums, and famous piazzas."
+  },
+  {
+    "id": 11,
+    "name": "Island Hopping",
+    "location": "Greek Islands, Greece",
+    "price": "$1600",
+    "duration": "8 days",
+    "description": "Sail around beautiful islands with crystal-clear waters."
+  },
+  {
+    "id": 12,
+    "name": "Northern Lights",
+    "location": "Reykjavik, Iceland",
+    "price": "$1900",
+    "duration": "7 days",
+    "description": "See the aurora borealis and explore volcanic landscapes."
+  },
+  {
+    "id": 13,
+    "name": "Wine Country",
+    "location": "Napa Valley, USA",
+    "price": "$1150",
+    "duration": "4 days",
+    "description": "Tour vineyards and enjoy exquisite wine tasting experiences."
+  },
+  {
+    "id": 14,
+    "name": "Tundra Trek",
+    "location": "Lapland, Finland",
+    "price": "$1750",
+    "duration": "6 days",
+    "description": "Dog sled through snow-covered forests and visit Santa Claus Village."
+  },
+  {
+    "id": 15,
+    "name": "Great Barrier Reef",
+    "location": "Queensland, Australia",
+    "price": "$2000",
+    "duration": "7 days",
+    "description": "Snorkel and dive among the world largest coral reef system."
+  }
+]

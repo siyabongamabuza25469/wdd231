@@ -17,11 +17,19 @@
     <!-- Favicon -->
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon" >
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" >
+    <!-- Google Fonts preconnect for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../styles/normalize.css" >
     <link rel="stylesheet" href="../styles/small.css" >
     <link rel="stylesheet" href="../styles/larger.css" >
-    <script type="module" src="scripts/main.js" defer></script>
+
+    <!-- Remove defer from module script -->
+    <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -73,7 +81,8 @@
     </section>
 
     <section id="submitted-data" aria-live="polite" style="margin-top: 2em;">
-        <!-- Submitted form data will be displayed here -->
+    <h2>Submitted Travel Data</h2>
+    <!-- Submitted form data will be displayed here -->
     </section>
 </main>
 <!-- Modal Dialog -->

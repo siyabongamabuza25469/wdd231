@@ -1,11 +1,6 @@
-// main.js
-
-import { fetchTravelData } from '../dataFetcher.js';
-import { displayTravelData } from '../modalHandler.js';
-
-async function init() {
-    const data = await fetchTravelData(); // Defaults to ./travelData.json
-    displayTravelData(data);
+// Example of dynamic import for optimization
+if (needsData) {
+  import('../dataFetcher.js').then(module => {
+    module.fetchData();
+  });
 }
-
-document.addEventListener('DOMContentLoaded', init);

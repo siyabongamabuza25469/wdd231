@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+  /* Show nav links horizontally */
+  .nav-links {
+    display: flex !important; /* override display:none from small.css */
+    position: static; /* remove absolute positioning */
+    flex-direction: row;
+    gap: 2rem;
+    width: auto;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  /* Nav links styling */
+  .nav-links li a {
+    padding: 0.5rem 0;
+  }
+
+  /* Hide hamburger on larger screens */
+  .hamburger {
+    display: none;
+  }
+
+  /* Adjust nav height / alignment if needed */
+  nav {
+    height: var(--nav-height);
+    padding: 0 2rem;
+  }
+}

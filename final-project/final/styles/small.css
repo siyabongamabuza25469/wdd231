@@ -1,0 +1,160 @@
+:root {
+  --primary-color: #2a7f2a;
+  --bg-color: #f4f4f4;
+  --border-color: #ccc;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  --nav-height: 60px;
+  --nav-bg: white;
+  --transition-speed: 0.3s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: var(--font-main); 
+  line-height: 1.6; 
+  margin: 0;
+  padding: 1rem;
+  max-width: 900px;
+  width: 90%;
+  background-color: var(--bg-color);
+  color: #333;
+
+  /* Set up a flex column container for page layout if needed */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1, h2 { 
+  color: var(--primary-color); 
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Images */
+.wireframe { 
+  display: block; 
+  max-width: 100%; 
+  height: auto;
+  border: 1px solid var(--border-color); 
+  margin-top: 0.5rem; 
+}
+
+/* Preformatted text */
+pre { 
+  background-color: var(--bg-color); 
+  padding: 0.5rem; 
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+/* Links general */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+a:hover,
+a:focus {
+  color: darkgreen;
+  outline: none;
+  text-decoration: underline;
+}
+
+/* Navigation styles */
+nav {
+  background-color: var(--nav-bg);
+  border-bottom: 1px solid var(--border-color);
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Nav list */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none; /* hidden by default (mobile) */
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--nav-bg);
+  position: absolute;
+  top: var(--nav-height);
+  right: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Show nav when active */
+.nav-links.active {
+  display: flex;
+}
+
+/* Nav links styling */
+.nav-links li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+/* Wayfinding: focus visible styles */
+.nav-links li a:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Hamburger button */
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  transition: all var(--transition-speed);
+}
+
+/* Hamburger open state animation */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}
+
+.margin-top-section {
+  margin-top: 2em;
+}

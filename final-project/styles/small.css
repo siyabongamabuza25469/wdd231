@@ -154,3 +154,7 @@ nav {
 .hamburger.open span:nth-child(3) {
   transform: rotate(-45deg) translateY(-9px);
 }
+
+.margin-top-section {
+  margin-top: 2em;
+}

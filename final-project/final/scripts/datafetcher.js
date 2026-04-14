@@ -1,5 +1,5 @@
 // dataFetcher.js
-export async function fetchTravelData(url = './travelData.json') {
+export async function fetchTravelData(url = './travel-items.json') {
     try {
         const response = await fetch(url);
         if (!response.ok) {

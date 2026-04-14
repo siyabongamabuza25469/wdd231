@@ -22,14 +22,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Local Stylesheets -->
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/small.css">
-    <link rel="stylesheet" href="../styles/larger.css">
+     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/main.js"></script>
     
     <!-- Google Fonts stylesheet -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Remove defer from module script -->
-    <script type="module" src="scripts/main.js"></script>
+    
 </head>
 <body>
 <header class="site-header">
@@ -80,10 +80,9 @@
         </form>
     </section>
 
-    <section id="submitted-data" aria-live="polite" class="margin-top-section">
+    <section id="submitted-data" class="margin-top-section" aria-live="polite">
     <h2>Submitted Travel Data</h2>
-    <!-- Submitted form data will be displayed here -->
-    </section>
+    <!-- Content for the first section -->
 </main>
 <!-- Modal Dialog -->
 <div id="info-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true" tabindex="-1">

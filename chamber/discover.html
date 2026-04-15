@@ -22,15 +22,17 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
     <link rel="apple-touch-icon" href="/apple-touch-icon.png"> 
     <link rel="canonical" href="https://www.sunnyvalechamber.com/"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+    <!-- Preconnect to Google Fonts origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
     <link rel="stylesheet" href="styles/normalize.css">    
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">    
-    <link rel="stylesheet" href="styles/larger.css">     
-     <script src="scripts/discover.js" defer></script>
+    <link rel="stylesheet" href="styles/larger.css"> 
+    <!-- Google Fonts stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">   
+
      <script type="module" src="data/members.mjs"></script>
     </head>
     <body> 
@@ -41,109 +43,121 @@
                     <h1><a href="discover.html">Sunnyvale Community Chamber Directory</a></h1>            
                 </div>        
             </div>
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Primary Menu">
-                <span class="screen-reader-text">Menu</span>
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="currentColor"></path>
-                </svg>
-            </button>
-            <ul id="primary-menu" class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="discover.html" aria-current="page">Discover</a></li>
-            </ul>
         </nav>
-        <div id="visit-message" role="region" aria-live="polite"></div>
-    </header>   
-                <!-- Visitor message section with heading -->
-        <section id="visitor-message" role="alert" aria-live="polite" tabindex="0" class="visitor-message">
-           <h2>Visitor Message</h2>
-       <!-- Your visitor message content here -->
-           <p>Welcome to our site! Check out our featured businesses below.</p>
-        </section>
+        <nav role="navigation">
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Primary Menu">
+        <span class="screen-reader-text">Menu</span>
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="currentColor"></path>
+        </svg>
+    </button>
+    <ul id="primary-menu" class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="discover.html" aria-current="page">Discover</a></li>
+    </ul>
+</nav>
 
-        <main id="discover-main" class="discover-grid container" aria-label="Discover items of interest">
+<div id="visit-message" role="region" aria-live="polite"></div>
+</header>   
 
-        <article class="card">
-           <h2>Sunshine Bakery</h2>
-        <figure>
-            <img src="images/storefront.webp" alt="Sunshine Bakery storefront" width="300" height="200">
-        </figure>
-        <address>123 Sunnyvale St</address>
-        <p>Delighting Sunnyvale with fresh breads and pastries made daily from local ingredients.</p>
-        <a href="https://storefront.com" class="button" aria-label="View our daily menu and bakery offerings">View our daily menu</a>
-        </article>
+<!-- Visitor message section with heading -->
+<section id="visitor-message" role="alert" aria-live="polite" tabindex="0" class="visitor-message">
+   <h2>Visitor Message</h2>
+   <!-- Your visitor message content here -->
+   <p>Welcome to our site! Check out our featured businesses below.</p>
+</section>
 
-        <article class="card">
-           <h2>Tech Solutions</h2>
-        <figure>
-            <img src="images/solutions.webp" alt="Tech Solutions office" width="300" height="200">
-        </figure>
-        <address>456 Tech Ave</address>
-        <p>Innovative IT services helping businesses optimize performance and security.</p>
-        <a href="https://solutions.com/" class="button" aria-label="Explore our IT optimization and security services">Explore our IT optimization</a>
-        </article>
+<main id="discover-main" class="discover-grid container" aria-label="Discover items of interest">
 
-        <article class="card">
-           <h2>Green Gardens</h2>
-        <figure>
-            <img src="images/landscaping.webp" alt="Green Gardens landscaping" width="300" height="200">
-        </figure>
-        <address>789 Garden Blvd</address>
-        <p>Beautifying yards and public spaces with sustainable landscaping designs.</p>
-        <a href="https://greengardenslandscaping.com/" class="button" aria-label="Explore our sustainable landscaping services">Explore our landscaping services</a>
-        </article>
-
-       <article class="card">
-          <h2>BlueWave Marketing</h2>
+    <article class="card">
+       <h2>Sunshine Bakery</h2>
        <figure>
-           <img src="images/bluewave.webp" alt="BlueWave Marketing people inside office" width="300" height="200">
-        </figure>
-        <address>321 Bluewave Rd</address>
-        <p>Creative marketing strategies that drive results.</p>
-        <a href="https://bluewavemarketing.com/" class="button" aria-label="View our results-driven marketing services">View our marketing services</a>
-        </article>
+           <img src="images/storefront.webp" alt="Sunshine Bakery storefront" width="300" height="200" loading="lazy">
+       </figure>
+       <address>123 Sunnyvale St</address>
+       <p>Delighting Sunnyvale with fresh breads and pastries made daily from local ingredients.</p>
+       <a href="https://storefront.com" class="button" aria-label="View our daily menu and bakery offerings">Learn More</a>
+    </article>
 
-        <article class="card">
-           <h2>Sunset Fitness</h2>
-        <figure>
-           <img src="images/sunset-fitness.webp" alt="Sunset Fitness gym interior" width="300" height="200">
-        </figure>
-        <address>654 Sunset Blvd</address>
-        <p>Health and wellness programs tailored to your needs.</p>
-        <a href="https://sunsetfitness.com/" class="button" aria-label="Explore our personalized health and wellness programs">Explore our health and wellness</a>
-        </article>
+    <article class="card">
+       <h2>Tech Solutions</h2>
+       <figure>
+           <img src="images/solutions.webp" alt="Tech Solutions office" width="300" height="200" loading="lazy">
+       </figure>
+       <address>456 Tech Ave</address>
+       <p>Innovative IT services helping businesses optimize performance and security.</p>
+       <a href="https://solutions.com/" class="button" aria-label="Explore our IT optimization and security services">Learn More</a>
+    </article>
 
-        <article class="card">
-            <h2>BrightFuture Consulting</h2>
-        <figure>
-            <img src="images/brightfuture.webp" alt="BrightFuture Consulting office" width="300" height="200">
-        </figure>
-        <address>987 BrightFuture Ln</address>
-        <p>Business consulting to unlock your potential.</p>
-        <a href="https://brightfutureconsulting.com/" class="button" aria-label="Unlock your business potential with our consulting">Unlock your business with our consulting</a>
-        </article>
+    <article class="card">
+       <h2>Green Gardens</h2>
+       <figure>
+           <img src="images/landscaping.webp" alt="Green Gardens landscaping" width="300" height="200" loading="lazy">
+       </figure>
+       <address>789 Garden Blvd</address>
+       <p>Beautifying yards and public spaces with sustainable landscaping designs.</p>
+       <a href="https://greengardenslandscaping.com/" class="button" aria-label="Explore our sustainable landscaping services">Learn More</a>
+    </article>
 
-        <article class="card">
-            <h2>Lakeside Cafe</h2>
-        <figure>
-            <img src="images/lakeside-cafe.webp" alt="Lakeside Cafe interior" width="300" height="200">
-        </figure>
-        <address>159 Lakeside Dr</address>
-        <p>Cozy cafe serving locally sourced dishes and drinks.</p>
-        <a href="https://lakesidecake.com/" class="button" aria-label="Discover our locally sourced cafe menu">Discover our sourced cafe menu</a>
-        </article>
-            <article class="card">
-               <h2>Mountain View Books</h2>
-            <figure>
-                <img src="images/mountain-view-books.webp" alt="Mountain View Books storefront" width="300" height="200">
-            </figure>
-            <address>753 Book St</address>
-            <p>Your neighborhood bookstore with a wide variety of genres.</p>
-            <a href="https://mountainviewbooks.com/" class="button" aria-label="Browse our wide variety of genres at Mountain View Books.">Browse our variety of genres at Mountain View Books</a>
-        </article>
-    </main>   
-            <footer class="site-footer container">    
+   <article class="card">
+      <h2>BlueWave Marketing</h2>
+      <figure>
+          <img src="images/bluewave.webp" alt="BlueWave Marketing people inside office" width="300" height="200" loading="lazy">
+      </figure>
+      <address>321 Bluewave Rd</address>
+      <p>Creative marketing strategies that drive results.</p>
+      <a href="https://bluewavemarketing.com/" class="button" aria-label="View our results-driven marketing services">Learn More</a>
+   </article>
+
+    <article class="card">
+       <h2>Sunset Fitness</h2>
+       <figure>
+           <img src="images/sunset-fitness.webp" alt="Sunset Fitness gym interior" width="300" height="200" loading="lazy">
+       </figure>
+       <address>654 Sunset Blvd</address>
+       <p>Health and wellness programs tailored to your needs.</p>
+       <a href="https://sunsetfitness.com/" class="button" aria-label="Explore our personalized health and wellness programs">Learn More</a>
+    </article>
+    <article class="card">
+        <h2>BrightFuture Consulting</h2>
+    <figure>
+        <img src="images/brightfuture.webp" alt="BrightFuture Consulting office" width="300" height="200" loading="lazy">
+    </figure>
+    <address>987 BrightFuture Ln</address>
+    <p>Business consulting to unlock your potential.</p>
+    <a href="https://brightfutureconsulting.com/" class="button" aria-label="Unlock your business potential with our consulting">Learn More</a>
+    </article>
+
+    <article class="card">
+        <h2>Lakeside Cafe</h2>
+    <figure>
+        <img src="images/lakeside-cafe.webp" alt="Lakeside Cafe interior" width="300" height="200" loading="lazy">
+    </figure>
+    <address>159 Lakeside Dr</address>
+    <p>Cozy cafe serving locally sourced dishes and drinks.</p>
+    <a href="https://lakesidecafe.com/" class="button" aria-label="Discover our locally sourced cafe menu">Learn More</a>
+    </article>
+    <article class="card">
+        <h2>Mountain View Books</h2>
+    <figure>
+        <img src="images/mountain-view-books.webp" alt="Mountain View Books storefront" width="300" height="200" loading="lazy">
+    </figure>
+    <address>753 Book St</address>
+    <p>Your neighborhood bookstore with a wide variety of genres.</p>
+    <a href="https://mountainviewbooks.com/" class="button" aria-label="Browse our wide variety of genres at Mountain View Books.">Learn More</a>
+    </article>
+    </main> 
+     <!-- Modal Dialog -->
+    <div id="info-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true" tabindex="-1">
+        <div class="modal-content">
+        <button type="button" class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal-title">Important featured businesses Information</h2>
+        <p>Thank you for visiting our featured businesses preferences!</p>
+    </div>
+    </div>
+ 
+        <footer class="site-footer container">    
         <p>Contact Information: <a href="mailto:mshengu25469@gmail.com">mshengu25469@gmail.com</a> | <a href="tel:+27632188736">+27 63 218 8736</a></p>
         <p>Developed by Siyabonga Bafanabakhe Mabuza | WDD 231 | Last Modified: <span id="last-modified"></span></p>    
         <nav aria-label="Footer Menu">       

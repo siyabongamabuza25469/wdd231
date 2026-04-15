@@ -9,6 +9,16 @@
         grid-template-areas:            "card1"            "card2"            "card3"            "card4"            "card5"            "card6"           "card7"            "card8";    
     }
 
+    .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu a[aria-current="page"] { 
+    border-bottom: 2px solid blue; 
+    font-weight: bold; 
+}
+
 .screen-reader-text {    
     position: absolute;    
     width: 1px;    

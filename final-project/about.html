@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="styles/larger.css" >
     <!-- Google Fonts stylesheet -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <script src="scripts/siteplan.js" defer></script>
+
+    <script type="module" src="scripts/stellar-travel.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -63,7 +63,10 @@
                 <h2>Meet Our Team</h2>
                 <p>Our dedicated team is passionate about discovering new destinations and sharing them with you.</p>
                 <img src="images/team-photo.jpg" alt="Stellar Travel Co. team smiling outdoors" loading="lazy" width="800" height="450">
-            </section>
+
+            <!-- Container for dynamic member cards -->
+            <div id="team-members"></div>
+             </section>
 
             <section>
                 <h2>Our Philosophy</h2>

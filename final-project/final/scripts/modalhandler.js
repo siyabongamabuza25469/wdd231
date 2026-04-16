@@ -2,7 +2,8 @@
 
 const modal = document.getElementById('info-modal');
 const closeButton = modal.querySelector('.modal-close');
-const dataSection = document.getElementById('submitted-data');
+const dataSection = document.getElementById('submitted-data'); // For submitted form data
+const modalTitle = document.getElementById('modal-title');     // Modal title element
 
 /**
  * Helper function to create a list item with label and value.
@@ -35,7 +36,27 @@ function formatDate(dateStr) {
 }
 
 /**
- * Display travel data inside modal.
+ * Show the modal window and set focus
+ */
+function showModal() {
+    modal.setAttribute('aria-hidden', 'false');
+    modal.style.display = 'flex';
+    modal.focus();
+    document.body.style.overflow = 'hidden';  // prevent background scrolling
+}
+
+/**
+ * Hide the modal window and restore focus
+ */
+function hideModal() {
+    modal.setAttribute('aria-hidden', 'true');
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+    // Optionally, move focus back to last focused element or container
+}
+
+/**
+ * Display submitted travel data inside the modal.
  * If data is null or undefined, hide modal.
  * @param {Object} data 
  */
@@ -45,10 +66,12 @@ export function displayTravelData(data) {
         return;
     }
 
+    modalTitle.textContent = 'Submitted Travel Information';
+
     // Clear previous content
     dataSection.innerHTML = '';
 
-    // Heading
+    // Heading inside dataSection (optional, redundant with modalTitle maybe)
     const heading = document.createElement('h3');
     heading.textContent = 'Submitted Travel Information';
     dataSection.appendChild(heading);
@@ -84,28 +107,56 @@ export function displayTravelData(data) {
     showModal();
 }
 
-/** Show the modal window */
-function showModal() {
-    modal.setAttribute('aria-hidden', 'false');
-    modal.style.display = 'flex';
-    modal.focus();
-    document.body.style.overflow = 'hidden';  // prevent background scrolling
+/**
+ * Display detailed info about a clicked travel item inside the modal.
+ * This updates the modal title and content with item's properties.
+ * @param {Object} item - travel item object with keys: name, location, price, duration, description (optional)
+ */
+export function displayModalWithItemDetails(item) {
+    if (!item) {
+        hideModal();
+        return;
+    }
+
+    modalTitle.textContent = item.name || 'Travel Item Details';
+
+    // Clear previous content in dataSection
+    dataSection.innerHTML = '';
+
+    // Use a fragment or direct innerHTML to show item details
+    const detailsFragment = document.createDocumentFragment();
+
+    // Create a wrapping div or keep simple list
+    const ul = document.createElement('ul');
+
+    // Add each property as list items with labels
+   ul.appendChild(createListItem('Location', item.location || 'Unknown'));
+ul.appendChild(createListItem('Price', typeof item.price === 'number' ? `$${item.price.toFixed(2)}` : (item.price || 'N/A')));
+ul.appendChild(createListItem('Duration', item.duration || 'N/A'));
+
+if (item.description) {
+    const descLi = document.createElement('li');
+    descLi.textContent = `Description: ${item.description}`;
+    ul.appendChild(descLi);
 }
 
-/** Hide the modal window */
-function hideModal() {
-    modal.setAttribute('aria-hidden', 'true');
-    modal.style.display = 'none';
-    document.body.style.overflow = '';
+dataSection.appendChild(ul);
+
+showModal();
 }
 
-// Event listener to close modal on clicking close button
-closeButton.addEventListener('click', () => {
-    hideModal();
+// Event listener for close button
+closeButton.addEventListener('click', hideModal);
+
+// Optional: Close modal when clicking outside modal content
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        hideModal();
+    }
 });
 
-// Event listener to close modal on pressing Escape key
-window.addEventListener('keydown', (event) => {
+// Optional: Close modal on Escape key press
+document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
         hideModal();
     }

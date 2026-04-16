@@ -24,8 +24,6 @@ body {
   width: 90%;
   background-color: var(--bg-color);
   color: #333;
-
-  /* Set up a flex column container for page layout if needed */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -49,19 +47,18 @@ h1, h2 {
 
 /* Preformatted text */
 pre { 
-  background-color: var(--bg-color); 
-  padding: 0.5rem; 
-  overflow-x: auto;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  margin: 1rem 0;
+    background-color: var(--bg-color); 
+    padding: 0.5rem; 
+    overflow-x: auto; 
+    border: 1px solid var(--border-color); 
+    border-radius: 4px; 
+    margin: 1rem 0; 
 }
 
-/* Links general */
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color var(--transition-speed);
+a { 
+    color: var(--primary-color); 
+    text-decoration: none; 
+    transition: color var(--transition-speed); 
 }
 a:hover,
 a:focus {

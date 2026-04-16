@@ -5,13 +5,7 @@
     box-sizing: border-box; 
 }
 
- *, *::before, *::after { 
-    box-sizing: inherit; 
-}
-
-body { 
-    margin: 0; 
-}
+ 
 
 main { 
     display: block; 
@@ -23,14 +17,6 @@ hr {
     overflow: visible; 
 }
 
-pre { 
-    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; 
-    font-size: 1em; 
-}
-
-a {
-  background-color: transparent;
-}
 
 abbr[title] {
   text-decoration: underline dotted; 
